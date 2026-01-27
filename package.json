@@ -1,0 +1,20 @@
+{
+    "name": "vaarunya-backend",
+    "version": "1.0.0",
+    "description": "Backend for Vaarunya mobile app",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "fetch": "node -e 'require(\"./fetcher\").runDailyFetch()'",
+        "backfill": "node backfill.js"
+    },
+    "dependencies": {
+        "axios": "^1.13.3",
+        "cors": "^2.8.6",
+        "dayjs": "^1.11.19",
+        "express": "^5.2.1",
+        "fs-extra": "^11.3.3",
+        "morgan": "^1.10.1",
+        "node-cron": "^4.2.1"
+    }
+}
