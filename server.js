@@ -40,7 +40,7 @@ app.get('/api/prices', async (req, res) => {
         const dayData = prices[date];
 
         if (!dayData) {
-            return res.status(404).json({ error: 'No data found for this date' });
+            return res.json({});
         }
 
         if (commodityId) {
