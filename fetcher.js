@@ -4,7 +4,7 @@ const path = require('path');
 const dayjs = require('dayjs');
 
 const DATA_PATH = path.join(__dirname, 'data.json');
-const PRICES_PATH = path.join(__dirname, 'prices.json');
+
 
 async function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -39,6 +39,8 @@ async function fetchCommodityPrices(date, group, commodity) {
     }
 }
 
+const { pool } = require('./db');
+
 async function runDailyFetch(dateOverride) {
     const date = dateOverride || dayjs().format('YYYY-MM-DD');
     console.log(`Starting fetch for ${date}...`);
@@ -53,41 +55,45 @@ async function runDailyFetch(dateOverride) {
 
     const groups = metadata.data.cmdt_group_data;
     const commodities = metadata.data.cmdt_data;
+    const client = await pool.connect();
 
-    let pricesData = {};
-    if (await fs.pathExists(PRICES_PATH)) {
-        try {
-            pricesData = await fs.readJson(PRICES_PATH);
-        } catch (e) {
-            console.error('Error reading prices.json, starting fresh');
-        }
-    }
+    try {
+        // Clear existing data for this date to avoid duplicates on re-run (refresh)
+        await client.query('DELETE FROM goods_price_registry WHERE report_date = $1', [date]);
 
-    if (!pricesData[date]) {
-        pricesData[date] = {};
-    }
+        // Loop through groups and commodities
+        for (const group of groups) {
+            const groupItems = commodities.filter(c => c.cmdt_group_id === group.id);
+            console.log(`Processing Group: ${group.cmdt_grp_name} (${groupItems.length} items)`);
 
-    // Loop through groups and commodities
-    for (const group of groups) {
-        const groupItems = commodities.filter(c => c.cmdt_group_id === group.id);
-        console.log(`Processing Group: ${group.cmdt_grp_name} (${groupItems.length} items)`);
+            for (const item of groupItems) {
+                console.log(`  Fetching ${item.cmdt_name}...`);
+                const records = await fetchCommodityPrices(date, group.id, item.cmdt_id);
 
-        for (const item of groupItems) {
-            // Check if already fetched today (optional resumes)
-            if (pricesData[date][item.cmdt_id]) continue;
+                if (records && records.length > 0) {
+                    // Batch insert or individual inserts?
+                    // Given the volume, a loop with prepared statement is fine for now.
+                    for (const record of records) {
+                        try {
+                            await client.query(
+                                'INSERT INTO goods_price_registry (report_date, commodity_id, record) VALUES ($1, $2, $3)',
+                                [date, item.cmdt_id, record]
+                            );
+                        } catch (err) {
+                            console.error(`Error inserting record for ${item.cmdt_name}:`, err);
+                        }
+                    }
+                    console.log(`    Saved ${records.length} records for ${item.cmdt_name}`);
+                }
 
-            console.log(`  Fetching ${item.cmdt_name}...`);
-            const records = await fetchCommodityPrices(date, group.id, item.cmdt_id);
-
-            if (records && records.length > 0) {
-                pricesData[date][item.cmdt_id] = records;
-                // Save after each successful fetch for real-time visibility
-                await fs.writeJson(PRICES_PATH, pricesData, { spaces: 2 });
+                // Small delay to be polite to the API
+                await sleep(200);
             }
-
-            // Small delay to be polite to the API
-            await sleep(200);
         }
+    } catch (err) {
+        console.error("Error during daily fetch:", err);
+    } finally {
+        client.release();
     }
 
     console.log(`Finished fetch for ${date}`);

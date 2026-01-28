@@ -5,6 +5,8 @@ const fs = require('fs-extra');
 const path = require('path');
 const { runDailyFetch } = require('./fetcher');
 const cors = require('cors');
+const { initDB, pool } = require('./db');
+const dayjs = require('dayjs');
 
 const app = express();
 const PORT = process.env.PORT || 5050;
@@ -13,7 +15,10 @@ app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 
-const PRICES_PATH = path.join(__dirname, 'prices.json');
+// Initialize DB
+initDB();
+
+// const PRICES_PATH = path.join(__dirname, 'prices.json'); // Removed
 const DATA_PATH = path.join(__dirname, 'data.json');
 
 // API Endpoints
@@ -35,21 +40,44 @@ app.get('/api/prices', async (req, res) => {
         return res.status(400).json({ error: 'Date parameter (YYYY-MM-DD) is required' });
     }
 
+    const client = await pool.connect();
     try {
-        const prices = await fs.readJson(PRICES_PATH);
-        const dayData = prices[date];
+        let query = 'SELECT commodity_id, record FROM goods_price_registry WHERE report_date = $1';
+        let params = [date];
 
-        if (!dayData) {
+        if (commodityId) {
+            query += ' AND commodity_id = $2';
+            params.push(commodityId);
+        }
+
+        const result = await client.query(query, params);
+
+        if (result.rows.length === 0) {
             return res.json({});
         }
 
         if (commodityId) {
-            return res.json(dayData[commodityId] || []);
+            // Return array of records for this commodity
+            const records = result.rows.map(row => row.record);
+            return res.json(records);
+        }
+
+        // Return object keyed by commodity_id: { 1: [...], 2: [...] }
+        const dayData = {};
+        for (const row of result.rows) {
+            const cid = row.commodity_id;
+            if (!dayData[cid]) {
+                dayData[cid] = [];
+            }
+            dayData[cid].push(row.record);
         }
 
         res.json(dayData);
     } catch (error) {
+        console.error("Failed to read prices data:", error);
         res.status(500).json({ error: 'Failed to read prices data' });
+    } finally {
+        client.release();
     }
 });
 
@@ -62,7 +90,8 @@ cron.schedule('0 12 * * *', () => {
 // Manually trigger fetch (for testing)
 app.post('/api/fetch/trigger', async (req, res) => {
     const { date } = req.body;
-    runDailyFetch(date); // run in background
+    // Run in background, don't await
+    runDailyFetch(date).catch(err => console.error("Background fetch failed:", err));
     res.json({ message: 'Fetch triggered successfully' });
 });
 
