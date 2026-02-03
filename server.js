@@ -11,6 +11,7 @@ const dayjs = require('dayjs');
 const app = express();
 const PORT = process.env.PORT || 5050;
 
+app.disable('etag');
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
