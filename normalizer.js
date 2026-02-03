@@ -1,6 +1,11 @@
 const { pool } = require('./db');
 const dayjs = require('dayjs');
 
+function toTitleCase(str) {
+    if (!str) return '';
+    return str.toLowerCase().replace(/(?:^|\s)\w/g, (match) => match.toUpperCase());
+}
+
 async function normalizeAgmarkData(date, client) {
     console.log(`Normalizing Agmark data for ${date}...`);
 
@@ -36,9 +41,9 @@ async function normalizeAgmarkData(date, client) {
                     model_price = EXCLUDED.model_price,
                     unit = EXCLUDED.unit
             `, [
-                row.state_name,
-                row.district_name,
-                row.market_name,
+                toTitleCase(row.state_name),
+                toTitleCase(row.district_name),
+                toTitleCase(row.market_name),
                 row.cmdt_name, // Commodity
                 row.min_price,
                 row.max_price,
@@ -94,20 +99,13 @@ async function normalizeEnamData(date, client) {
                     model_price = EXCLUDED.model_price,
                     unit = EXCLUDED.unit
             `, [
-                row.state_name,
-                row.apmc_name, // eNAM calls it 'apmc' or 'apmc_name'
+                toTitleCase(row.state_name),
+                toTitleCase(row.apmc_name), // eNAM calls it 'apmc' or 'apmc_name'
                 row.commodity_name,
                 row.min_price,
                 row.max_price,
                 row.modal_price, // eNAM uses 'modal_price'
-                'Rs./Quintal', // eNAM usually sends prices in Rs/Quintal implicitly or we check `unit_name_price`? 
-                // The sample showed `Commodity_Uom` (saved as unit_name_price) as "Nos".
-                // Wait, eNAM price is usually per Quintal, regardless of UOM for arrival?
-                // User said "here in AGMARK it has in MT but in e-NAM has different units but - maintain one unit for consistency"
-                // That referred to ARRIVALS.
-                // For Price: let's use the stored unit or default.
-                // Agmark is Rs./Quintal. eNAM prices are likely Rs./Quintal too.
-                // Let's assume standard price unit for now or use 'Rs./Quintal'.
+                'Rs./Quintal',
                 'eNAM',
                 date
             ]);
@@ -160,8 +158,8 @@ async function normalizeEnamData(date, client) {
                     arrival_quantity = EXCLUDED.arrival_quantity,
                     arrival_unit = EXCLUDED.arrival_unit
             `, [
-                row.state_name,
-                row.apmc_name,
+                toTitleCase(row.state_name),
+                toTitleCase(row.apmc_name),
                 row.commodity_name,
                 quantityMT > 0 ? quantityMT : rawQty, // If converted use MT, else raw
                 quantityMT > 0 ? 'MT' : row.unit_name_price, // 'MT' or original
