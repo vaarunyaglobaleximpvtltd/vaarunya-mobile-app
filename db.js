@@ -5,8 +5,11 @@ require('dotenv').config({ path: path.join(__dirname, '.env') });
 // Workaround for Supabase self-signed certs
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
+const rawUrl = process.env.POSTGRES_URL_NON_POOLING || process.env.POSTGRES_URL;
+const connectionString = rawUrl ? rawUrl.replace(/^["'](.*)["']$/, '$1') : undefined;
+
 const pool = new Pool({
-    connectionString: process.env.POSTGRES_URL_NON_POOLING || process.env.POSTGRES_URL,
+    connectionString,
     ssl: {
         rejectUnauthorized: false
     }

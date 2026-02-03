@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+backfill.log
+server.log
+expo_tunnel.log
+lt.log
+.git
+.vscode
+.env
+Dockerfile
+.dockerignore
