@@ -108,6 +108,7 @@ app.get('/api/prices', async (req, res) => {
             SELECT 
                 p.commodity_name, 
                 p.state_name, 
+                p.district_name,
                 p.market_name, 
                 p.min_price, 
                 p.max_price, 

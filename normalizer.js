@@ -24,18 +24,20 @@ async function normalizeAgmarkData(date, client) {
         try {
             await client.query(`
                 INSERT INTO market_prices_common (
-                    state_name, market_name, commodity_name,
+                    state_name, district_name, market_name, commodity_name,
                     min_price, max_price, model_price,
                     unit, source, report_date
-                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
                 ON CONFLICT (report_date, source, state_name, market_name, commodity_name) 
                 DO UPDATE SET
+                    district_name = EXCLUDED.district_name,
                     min_price = EXCLUDED.min_price,
                     max_price = EXCLUDED.max_price,
                     model_price = EXCLUDED.model_price,
                     unit = EXCLUDED.unit
             `, [
                 row.state_name,
+                row.district_name,
                 row.market_name,
                 row.cmdt_name, // Commodity
                 row.min_price,

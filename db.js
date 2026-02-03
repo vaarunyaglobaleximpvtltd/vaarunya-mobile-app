@@ -77,6 +77,7 @@ async function initDB() {
             CREATE TABLE IF NOT EXISTS market_prices_common (
                 id SERIAL PRIMARY KEY,
                 state_name TEXT,
+                district_name TEXT,
                 market_name TEXT,
                 commodity_name TEXT,
                 min_price NUMERIC,
