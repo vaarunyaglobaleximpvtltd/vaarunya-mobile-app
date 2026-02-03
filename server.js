@@ -37,9 +37,13 @@ app.get('/api/metadata', async (req, res) => {
 
 // 2. Get prices for a specific date with pagination and filtering
 app.get('/api/prices', async (req, res) => {
-    const { date, commodityId, page = 1, limit = 20, search = '', groupId, onlyWithPrices = 'false' } = req.query;
-    if (!date) {
-        return res.status(400).json({ error: 'Date parameter (YYYY-MM-DD) is required' });
+    const { fromDate, toDate, date, commodityId, page = 1, limit = 20, search = '', groupId, onlyWithPrices = 'false' } = req.query;
+
+    const dFrom = fromDate || date;
+    const dTo = toDate || date;
+
+    if (!dFrom || !dTo) {
+        return res.status(400).json({ error: 'Date range parameters (fromDate, toDate or date) are required' });
     }
 
     const p = parseInt(page);
@@ -79,8 +83,8 @@ app.get('/api/prices', async (req, res) => {
             const activeRes = await client.query(
                 `SELECT DISTINCT LOWER(commodity_name) as name 
                  FROM market_prices_common 
-                 WHERE report_date = $1 AND LOWER(commodity_name) = ANY($2)`,
-                [date, commodityNames]
+                 WHERE report_date BETWEEN $1 AND $2 AND LOWER(commodity_name) = ANY($3)`,
+                [dFrom, dTo, commodityNames]
             );
             activeCommodityNames = activeRes.rows.map(r => r.name);
         }
@@ -125,10 +129,10 @@ app.get('/api/prices', async (req, res) => {
                 AND p.state_name = e.state_name 
                 AND p.market_name = e.apmc_name 
                 AND p.commodity_name = e.commodity_name
-            WHERE p.report_date = $1 AND LOWER(p.commodity_name) = ANY($2)
+            WHERE p.report_date BETWEEN $1 AND $2 AND LOWER(p.commodity_name) = ANY($3)
         `;
 
-        const result = await client.query(query, [date, pageNames]);
+        const result = await client.query(query, [dFrom, dTo, pageNames]);
 
         const recordsByCid = {};
         for (const row of result.rows) {
