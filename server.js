@@ -33,25 +33,76 @@ app.get('/api/metadata', async (req, res) => {
     }
 });
 
-// 2. Get prices for a specific date ( Unified from market_prices_common )
+// 2. Get prices for a specific date with pagination and filtering
 app.get('/api/prices', async (req, res) => {
-    const { date, commodityId } = req.query;
+    const { date, commodityId, page = 1, limit = 20, search = '', groupId, onlyWithPrices = 'false' } = req.query;
     if (!date) {
         return res.status(400).json({ error: 'Date parameter (YYYY-MM-DD) is required' });
     }
 
+    const p = parseInt(page);
+    const l = parseInt(limit);
+    const offset = (p - 1) * l;
+
     const client = await pool.connect();
     try {
-        // Load metadata to map names to IDs
+        // 1. Get metadata and filter by search/groupId
         const metadata = await fs.readJson(DATA_PATH);
+        let commodities = metadata.data?.cmdt_data || [];
+
+        if (search) {
+            const lowSearch = search.toLowerCase();
+            commodities = commodities.filter(c => c.cmdt_name.toLowerCase().includes(lowSearch));
+        }
+
+        if (groupId) {
+            commodities = commodities.filter(c => String(c.cmdt_group_id) === String(groupId));
+        }
+
+        if (commodityId) {
+            commodities = commodities.filter(c => String(c.cmdt_id) === String(commodityId));
+        }
+
         const nameToIdMap = {};
-        if (metadata.data && metadata.data.cmdt_data) {
-            metadata.data.cmdt_data.forEach(c => {
-                nameToIdMap[c.cmdt_name.toLowerCase()] = c.cmdt_id;
+        commodities.forEach(c => {
+            nameToIdMap[c.cmdt_name.toLowerCase()] = c.cmdt_id;
+        });
+
+        const commodityNames = commodities.map(c => c.cmdt_name.toLowerCase());
+
+        // 2. Identify commodities with prices if needed
+        let activeCommodityNames = commodityNames;
+        if (onlyWithPrices === 'true' || search || groupId || page > 1) {
+            // We need to know which ones have data to paginate correctly
+            const activeRes = await client.query(
+                `SELECT DISTINCT LOWER(commodity_name) as name 
+                 FROM market_prices_common 
+                 WHERE report_date = $1 AND LOWER(commodity_name) = ANY($2)`,
+                [date, commodityNames]
+            );
+            activeCommodityNames = activeRes.rows.map(r => r.name);
+        }
+
+        // 3. Final list of commodity IDs to return for this page
+        // If onlyWithPrices is false, we include everything from 'commodities'
+        // If true, we only include those in 'activeCommodityNames'
+        let finalCommodityList = onlyWithPrices === 'true'
+            ? commodities.filter(c => activeCommodityNames.includes(c.cmdt_name.toLowerCase()))
+            : commodities;
+
+        const total = finalCommodityList.length;
+        const pageItems = finalCommodityList.slice(offset, offset + l);
+        const pageNames = pageItems.map(c => c.cmdt_name.toLowerCase());
+
+        // 4. Fetch the full record data for these specific commodities
+        if (pageItems.length === 0) {
+            return res.json({
+                data: {},
+                pagination: { total, page: p, limit: l, hasMore: false }
             });
         }
 
-        let query = `
+        const query = `
             SELECT 
                 p.commodity_name, 
                 p.state_name, 
@@ -71,53 +122,38 @@ app.get('/api/prices', async (req, res) => {
                 AND p.state_name = e.state_name 
                 AND p.market_name = e.apmc_name 
                 AND p.commodity_name = e.commodity_name
-            WHERE p.report_date = $1
+            WHERE p.report_date = $1 AND LOWER(p.commodity_name) = ANY($2)
         `;
-        let params = [date];
 
-        // Note: Filtering by commodityId in params is tricky if we don't have ID in table.
-        // We will fetch all and filter in JS if commodityId is present, or join if we had IDs.
-        // Given specific request usually fetches all for the day, fetching all is fine.
+        const result = await client.query(query, [date, pageNames]);
 
-        const result = await client.query(query, params);
-
-        if (result.rows.length === 0) {
-            return res.json({});
-        }
-
-        const dayData = {};
+        const recordsByCid = {};
         for (const row of result.rows) {
             const lowerName = (row.commodity_name || '').toLowerCase();
             const cid = nameToIdMap[lowerName];
-
-            // If we find a matching ID, group it. 
-            // If eNAM has a name not in Agmark metadata, we currently skip it or could put in 'others'
             if (cid) {
-                if (commodityId && String(cid) !== String(commodityId)) {
-                    continue;
-                }
-
-                if (!dayData[cid]) {
-                    dayData[cid] = [];
-                }
-                dayData[cid].push({
-                    ...row,
-                    cmdt_name: row.commodity_name, // Ensure compat
-                    cmdt_grp_name: 'Unknown', // We could map this too if needed from metadata
-                });
+                if (!recordsByCid[cid]) recordsByCid[cid] = [];
+                recordsByCid[cid].push({ ...row, cmdt_name: row.commodity_name });
             }
         }
 
-        if (commodityId && dayData[commodityId]) {
-            return res.json(dayData[commodityId]);
-        } else if (commodityId) {
-            return res.json([]);
-        }
+        const data = pageItems.map(c => ({
+            ...c,
+            records: recordsByCid[c.cmdt_id] || []
+        }));
 
-        res.json(dayData);
+        res.json({
+            data,
+            pagination: {
+                total,
+                page: p,
+                limit: l,
+                hasMore: offset + l < total
+            }
+        });
     } catch (error) {
-        console.error("Failed to read prices data:", error);
-        res.status(500).json({ error: 'Failed to read prices data' });
+        console.error("Failed to fetch paginated prices:", error);
+        res.status(500).json({ error: 'Failed to fetch prices data' });
     } finally {
         client.release();
     }
