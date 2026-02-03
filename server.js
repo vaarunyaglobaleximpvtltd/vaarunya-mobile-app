@@ -219,8 +219,9 @@ app.get('/api/history', async (req, res) => {
 // 4. Get Exchange Rates (Live Market vs HDFC Indicative)
 app.get('/api/exchange-rates', async (req, res) => {
     try {
-        // Fetching real-time rates from Frankfurter API (Open Source)
-        const response = await axios.get('https://api.frankfurter.app/latest?from=USD&to=INR');
+        // Fetching real-time rates from ExchangeRate-API (Standard Source)
+        // This provider is more accurate for INR/Standard benchmarks
+        const response = await axios.get('https://api.exchangerate-api.com/v4/latest/USD');
 
         if (!response.data || !response.data.rates || !response.data.rates.INR) {
             throw new Error("Invalid response from exchange rate API");
@@ -235,7 +236,7 @@ app.get('/api/exchange-rates', async (req, res) => {
                 rbi: {
                     USD: parseFloat(rbiRate.toFixed(4)),
                     date: response.data.date,
-                    source: 'Financial Benchmarks India Pvt Ltd (FBIL) - External API'
+                    source: 'Standard Forex Reference (Dynamic Market Rate)'
                 },
                 hdfc: {
                     USD: parseFloat(hdfcRate.toFixed(4)),
@@ -269,3 +270,5 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
     console.log('Daily cron job scheduled for 12:00 PM');
 });
+
+
