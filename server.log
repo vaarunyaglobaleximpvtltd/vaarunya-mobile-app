@@ -1,0 +1,21 @@
+[dotenv@17.2.3] injecting env (15) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+DB Config - Connection String exists: true
+DB Config - Using Non-Pooling: true
+(node:76818) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+
+To prepare for this change:
+- If you want the current behavior, explicitly use 'sslmode=verify-full'
+- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+
+See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Server is running on port 5050
+Daily cron job scheduled for 12:00 PM
+(node:76818) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+Initializing database...
+Database initialized successfully (agmark_sales_data).
+Database initialized successfully (enam_sales_data).
+Database initialized successfully (market_prices_common).
+Database initialized successfully (market_arrivals_common).
+All tables initialized successfully.

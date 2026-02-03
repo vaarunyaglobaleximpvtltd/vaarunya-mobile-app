@@ -1,15 +1,19 @@
 const { Pool } = require('pg');
-require('dotenv').config();
+const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 // Workaround for Supabase self-signed certs
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 const pool = new Pool({
-    connectionString: process.env.POSTGRES_URL,
+    connectionString: process.env.POSTGRES_URL_NON_POOLING || process.env.POSTGRES_URL,
     ssl: {
         rejectUnauthorized: false
     }
 });
+
+console.log("DB Config - Connection String exists:", !!(process.env.POSTGRES_URL_NON_POOLING || process.env.POSTGRES_URL));
+console.log("DB Config - Using Non-Pooling:", !!process.env.POSTGRES_URL_NON_POOLING);
 
 async function initDB() {
     const client = await pool.connect();
@@ -17,29 +21,91 @@ async function initDB() {
         console.log("Initializing database...");
 
         // Create table for storing fetched price records
-        // We use JSONB for the 'record' column to store the full object returned by Agmarknet API
-        // This provides flexibility and matches the 'raw_data' approach
+        // Using explicit columns as requested
         await client.query(`
-            CREATE TABLE IF NOT EXISTS goods_price_registry (
+            CREATE TABLE IF NOT EXISTS agmark_sales_data (
                 id SERIAL PRIMARY KEY,
                 report_date DATE NOT NULL,
                 commodity_id INTEGER NOT NULL,
-                record JSONB NOT NULL,
+                cmdt_name TEXT,
+                cmdt_grp_name TEXT,
+                market_name TEXT,
+                district_name TEXT,
+                state_name TEXT,
+                grade_name TEXT,
+                variety_name TEXT,
+                unit_name_price TEXT,
+                min_price NUMERIC,
+                max_price NUMERIC,
+                model_price NUMERIC,
+                arrival_date TEXT,
                 created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-                UNIQUE(report_date, commodity_id, record)
+                UNIQUE(report_date, commodity_id, market_name, variety_name, grade_name)
             );
         `);
-        // Note: The unique constraint is a bit loose here by including 'record', 
-        // ideally we'd key off market+commodity+date but the record structure is complex inside.
-        // For simple de-duplication of exact same rows, this works. 
-        // If we fetch again for same day and data varies slightly, we might get duplicates if we don't clear old data.
-        // A safer approach for "Refresh" is to DELETE for the date before inserting, 
-        // OR simpler: Just append and let filtering handle it. 
-        // Let's rely on app filtering unique? No, better to manage duplicates.
-        // Let's assume on re-fetch we might want to overwrite or ignore existing.
-        // For simplicity: We will rely on the fetcher logic to handle this.
 
-        console.log("Database initialized successfully.");
+        console.log("Database initialized successfully (agmark_sales_data).");
+
+        // 2. Create table for eNAM data
+        await client.query(`
+            CREATE TABLE IF NOT EXISTS enam_sales_data (
+                id SERIAL PRIMARY KEY,
+                enam_id TEXT,
+                state_name TEXT,
+                apmc_name TEXT,
+                commodity_name TEXT,
+                min_price NUMERIC,
+                modal_price NUMERIC,
+                max_price NUMERIC,
+                commodity_arrivals NUMERIC,
+                commodity_traded NUMERIC,
+                created_at_api DATE,
+                status TEXT,
+                unit_name_price TEXT,
+                report_date DATE NOT NULL,
+                created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+                UNIQUE(report_date, enam_id, apmc_name, commodity_name)
+            );
+        `);
+        console.log("Database initialized successfully (enam_sales_data).");
+
+        // 3. Common Market Prices Table
+        await client.query(`
+            CREATE TABLE IF NOT EXISTS market_prices_common (
+                id SERIAL PRIMARY KEY,
+                state_name TEXT,
+                market_name TEXT,
+                commodity_name TEXT,
+                min_price NUMERIC,
+                max_price NUMERIC,
+                model_price NUMERIC,
+                unit TEXT,
+                source TEXT,
+                report_date DATE NOT NULL,
+                created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+                UNIQUE(report_date, source, state_name, market_name, commodity_name)
+            );
+        `);
+        console.log("Database initialized successfully (market_prices_common).");
+
+        // 4. Common Market Arrivals Table
+        await client.query(`
+            CREATE TABLE IF NOT EXISTS market_arrivals_common (
+                id SERIAL PRIMARY KEY,
+                state_name TEXT,
+                market_name TEXT,
+                commodity_name TEXT,
+                arrival_quantity NUMERIC,
+                arrival_unit TEXT,
+                source TEXT,
+                report_date DATE NOT NULL,
+                created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+                UNIQUE(report_date, source, state_name, market_name, commodity_name)
+            );
+        `);
+        console.log("Database initialized successfully (market_arrivals_common).");
+
+        console.log("All tables initialized successfully.");
     } catch (err) {
         console.error("Error initializing database:", err);
     } finally {

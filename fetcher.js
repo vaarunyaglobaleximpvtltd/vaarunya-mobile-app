@@ -59,7 +59,7 @@ async function runDailyFetch(dateOverride) {
 
     try {
         // Clear existing data for this date to avoid duplicates on re-run (refresh)
-        await client.query('DELETE FROM goods_price_registry WHERE report_date = $1', [date]);
+        await client.query('DELETE FROM agmark_sales_data WHERE report_date = $1', [date]);
 
         // Loop through groups and commodities
         for (const group of groups) {
@@ -75,9 +75,24 @@ async function runDailyFetch(dateOverride) {
                     // Given the volume, a loop with prepared statement is fine for now.
                     for (const record of records) {
                         try {
+                            const minPrice = record.min_price ? parseFloat(record.min_price.replace(/,/g, '')) : 0;
+                            const maxPrice = record.max_price ? parseFloat(record.max_price.replace(/,/g, '')) : 0;
+                            const modelPrice = record.model_price ? parseFloat(record.model_price.replace(/,/g, '')) : 0;
+
                             await client.query(
-                                'INSERT INTO goods_price_registry (report_date, commodity_id, record) VALUES ($1, $2, $3)',
-                                [date, item.cmdt_id, record]
+                                `INSERT INTO agmark_sales_data (
+                                    report_date, commodity_id, 
+                                    cmdt_name, cmdt_grp_name, market_name, district_name, state_name,
+                                    grade_name, variety_name, unit_name_price,
+                                    min_price, max_price, model_price, arrival_date
+                                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
+                                ON CONFLICT (report_date, commodity_id, market_name, variety_name, grade_name) DO NOTHING`,
+                                [
+                                    date, item.cmdt_id,
+                                    record.cmdt_name, record.cmdt_grp_name, record.market_name, record.district_name, record.state_name,
+                                    record.grade_name, record.variety_name, record.unit_name_price,
+                                    minPrice, maxPrice, modelPrice, record.arrival_date
+                                ]
                             );
                         } catch (err) {
                             console.error(`Error inserting record for ${item.cmdt_name}:`, err);
