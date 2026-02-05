@@ -38,11 +38,44 @@ async function fetchEnamData(date) {
     }
 }
 
+const fs = require('fs-extra');
+const path = require('path');
+const DATA_PATH = path.join(__dirname, 'data.json');
+
 async function runEnamFetch(dateOverride) {
     const date = dateOverride || dayjs().format('YYYY-MM-DD');
     const records = await fetchEnamData(date);
 
     if (records.length === 0) return;
+
+    let metadata;
+    try {
+        metadata = await fs.readJson(DATA_PATH);
+    } catch (error) {
+        console.error('Failed to read data.json');
+        return;
+    }
+
+    const nameToUuiq = {};
+    const cleanNameToUuiq = {};
+    metadata.data.cmdt_data.forEach(c => {
+        const lower = c.cmdt_name.toLowerCase();
+        nameToUuiq[lower] = c.uuiq;
+        cleanNameToUuiq[lower.replace(/\s+/g, '')] = c.uuiq;
+    });
+
+    function getUuiq(name) {
+        if (!name) return null;
+        const lower = name.toLowerCase().trim();
+        if (nameToUuiq[lower]) return nameToUuiq[lower];
+        const noSpace = lower.replace(/\s+/g, '');
+        if (cleanNameToUuiq[noSpace]) return cleanNameToUuiq[noSpace];
+        const cleanSuffix = lower.split('(')[0].split('-')[0].trim();
+        if (nameToUuiq[cleanSuffix]) return nameToUuiq[cleanSuffix];
+        const cleanSuffixNoSpace = cleanSuffix.replace(/\s+/g, '');
+        if (cleanNameToUuiq[cleanSuffixNoSpace]) return cleanNameToUuiq[cleanSuffixNoSpace];
+        return null;
+    }
 
     const client = await pool.connect();
     try {
@@ -73,19 +106,23 @@ async function runEnamFetch(dateOverride) {
                     unitNamePrice = `Rs./${unitNamePrice}`;
                 }
 
+                const uuiq = getUuiq(record.commodity);
+
                 await client.query(`
                     INSERT INTO enam_sales_data (
                         enam_id, state_name, apmc_name, commodity_name,
                         min_price, modal_price, max_price,
                         commodity_arrivals, commodity_traded, created_at_api,
-                        status, unit_name_price, report_date
-                    ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13)
+                        status, unit_name_price, report_date,
+                        commodity_uuiq
+                    ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
                     ON CONFLICT (report_date, enam_id, apmc_name, commodity_name) 
                     DO UPDATE SET
                         unit_name_price = EXCLUDED.unit_name_price,
                         min_price = EXCLUDED.min_price,
                         max_price = EXCLUDED.max_price,
-                        modal_price = EXCLUDED.modal_price
+                        modal_price = EXCLUDED.modal_price,
+                        commodity_uuiq = EXCLUDED.commodity_uuiq
                 `, [
                     record.id,
                     record.state,
@@ -99,7 +136,8 @@ async function runEnamFetch(dateOverride) {
                     record.created_at, // API date field
                     record.status,
                     unitNamePrice,
-                    date // Our report date
+                    date, // Our report date
+                    uuiq
                 ]);
             } catch (e) {
                 console.error(`Error processing eNAM record ${record.id}:`, e.message);

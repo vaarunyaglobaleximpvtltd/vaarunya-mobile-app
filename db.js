@@ -42,6 +42,7 @@ async function initDB() {
                 max_price NUMERIC,
                 model_price NUMERIC,
                 arrival_date TEXT,
+                commodity_uuiq TEXT,
                 created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
                 UNIQUE(report_date, commodity_id, market_name, variety_name, grade_name)
             );
@@ -66,6 +67,7 @@ async function initDB() {
                 status TEXT,
                 unit_name_price TEXT,
                 report_date DATE NOT NULL,
+                commodity_uuiq TEXT,
                 created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
                 UNIQUE(report_date, enam_id, apmc_name, commodity_name)
             );
@@ -80,6 +82,7 @@ async function initDB() {
                 district_name TEXT,
                 market_name TEXT,
                 commodity_name TEXT,
+                commodity_uuiq TEXT,
                 min_price NUMERIC,
                 max_price NUMERIC,
                 model_price NUMERIC,
@@ -99,6 +102,7 @@ async function initDB() {
                 state_name TEXT,
                 market_name TEXT,
                 commodity_name TEXT,
+                commodity_uuiq TEXT,
                 arrival_quantity NUMERIC,
                 arrival_unit TEXT,
                 source TEXT,

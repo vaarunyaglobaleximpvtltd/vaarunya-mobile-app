@@ -4,6 +4,8 @@ const morgan = require('morgan');
 const fs = require('fs-extra');
 const path = require('path');
 const { runDailyFetch } = require('./fetcher');
+const { runEnamFetch } = require('./fetcher_enam');
+const { runNormalization } = require('./normalizer');
 const cors = require('cors');
 const { initDB, pool } = require('./db');
 const dayjs = require('dayjs');
@@ -120,6 +122,7 @@ app.get('/api/prices', async (req, res) => {
                 p.unit as unit_name_price, 
                 p.source,
                 p.report_date as arrival_date,
+                p.commodity_uuiq as uuiq,
                 e.commodity_arrivals,
                 e.commodity_traded
             FROM market_prices_common p
@@ -257,18 +260,91 @@ app.get('/api/exchange-rates', async (req, res) => {
     }
 });
 
+// 5. Download price list as CSV
+app.get('/api/prices/download', async (req, res) => {
+    const { date } = req.query;
+    if (!date) {
+        return res.status(400).json({ error: 'Date parameter is required' });
+    }
+
+    const client = await pool.connect();
+    try {
+        const query = `
+            SELECT 
+                commodity_name, 
+                commodity_uuiq as uuiq, 
+                AVG(model_price) as avg_price
+            FROM market_prices_common
+            WHERE report_date = $1
+            GROUP BY commodity_name, commodity_uuiq
+            ORDER BY commodity_name ASC
+        `;
+
+        const result = await client.query(query, [date]);
+
+        const formattedDate = dayjs(date).format('DD/MM/YYYY');
+        const priceListName = `Price list for ${formattedDate}`;
+        const currencyCode = 'INR';
+        const type = 'per_item';
+
+        // CSV Header
+        let csvContent = "PriceList Name,Type,Item Name,SKU,PriceList Rate,Currency Code\n";
+
+        for (const row of result.rows) {
+            const itemName = row.commodity_name.replace(/"/g, '""'); // Escape double quotes
+            const sku = row.uuiq || `VAAR_UNMAPPED`;
+            const avgPrice = parseFloat(row.avg_price) || 0;
+            const vaarunyaPrice = Math.round(avgPrice * 1.15);
+
+            // Quote values to handle commas in names
+            csvContent += `"${priceListName}","${type}","${itemName}","${sku}",${vaarunyaPrice},"${currencyCode}"\n`;
+        }
+
+        res.setHeader('Content-Type', 'text/csv');
+        res.setHeader('Content-Disposition', `attachment; filename=PriceList_${date}.csv`);
+        res.status(200).send(csvContent);
+
+    } catch (error) {
+        console.error("Failed to generate CSV download:", error);
+        res.status(500).json({ error: 'Failed to generate CSV' });
+    } finally {
+        client.release();
+    }
+});
+
 // 5. Cron Job: Daily at 12:00
-cron.schedule('0 12 * * *', () => {
-    console.log('Running daily cron job at 12:00...');
-    runDailyFetch();
+cron.schedule('0 12 * * *', async () => {
+    console.log('Running daily cron job pipeline at 12:00...');
+    const date = dayjs().format('YYYY-MM-DD');
+    try {
+        await runDailyFetch(date);
+        await runEnamFetch(date);
+        await runNormalization(date);
+        console.log(`Daily pipeline completed successfully for ${date}`);
+    } catch (err) {
+        console.error(`Daily pipeline failed for ${date}:`, err.message);
+    }
 });
 
 // Manually trigger fetch (for testing)
 app.post('/api/fetch/trigger', async (req, res) => {
     const { date } = req.body;
-    // Run in background, don't await
-    runDailyFetch(date).catch(err => console.error("Background fetch failed:", err));
-    res.json({ message: 'Fetch triggered successfully' });
+    const fetchDate = date || dayjs().format('YYYY-MM-DD');
+
+    // Run pipeline in background
+    (async () => {
+        try {
+            console.log(`Manually triggered pipeline for ${fetchDate}...`);
+            await runDailyFetch(fetchDate);
+            await runEnamFetch(fetchDate);
+            await runNormalization(fetchDate);
+            console.log(`Manual pipeline completed for ${fetchDate}`);
+        } catch (err) {
+            console.error(`Manual pipeline failed for ${fetchDate}:`, err.message);
+        }
+    })();
+
+    res.json({ message: `Fetch pipeline triggered for ${fetchDate}` });
 });
 
 app.listen(PORT, () => {

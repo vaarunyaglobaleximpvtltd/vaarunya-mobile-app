@@ -30,12 +30,13 @@ async function normalizeAgmarkData(date, client) {
             await client.query(`
                 INSERT INTO market_prices_common (
                     state_name, district_name, market_name, commodity_name,
-                    min_price, max_price, model_price,
+                    commodity_uuiq, min_price, max_price, model_price,
                     unit, source, report_date
-                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
+                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
                 ON CONFLICT (report_date, source, state_name, market_name, commodity_name) 
                 DO UPDATE SET
                     district_name = EXCLUDED.district_name,
+                    commodity_uuiq = EXCLUDED.commodity_uuiq,
                     min_price = EXCLUDED.min_price,
                     max_price = EXCLUDED.max_price,
                     model_price = EXCLUDED.model_price,
@@ -45,6 +46,7 @@ async function normalizeAgmarkData(date, client) {
                 toTitleCase(row.district_name),
                 toTitleCase(row.market_name),
                 row.cmdt_name, // Commodity
+                row.commodity_uuiq,
                 row.min_price,
                 row.max_price,
                 row.model_price,
@@ -89,19 +91,21 @@ async function normalizeEnamData(date, client) {
             await client.query(`
                 INSERT INTO market_prices_common (
                     state_name, market_name, commodity_name,
-                    min_price, max_price, model_price,
+                    commodity_uuiq, min_price, max_price, model_price,
                     unit, source, report_date
-                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
                 ON CONFLICT (report_date, source, state_name, market_name, commodity_name) 
                 DO UPDATE SET
                     min_price = EXCLUDED.min_price,
                     max_price = EXCLUDED.max_price,
                     model_price = EXCLUDED.model_price,
-                    unit = EXCLUDED.unit
+                    unit = EXCLUDED.unit,
+                    commodity_uuiq = EXCLUDED.commodity_uuiq
             `, [
                 toTitleCase(row.state_name),
                 toTitleCase(row.apmc_name), // eNAM calls it 'apmc' or 'apmc_name'
                 row.commodity_name,
+                row.commodity_uuiq,
                 row.min_price,
                 row.max_price,
                 row.modal_price, // eNAM uses 'modal_price'
@@ -150,17 +154,19 @@ async function normalizeEnamData(date, client) {
             await client.query(`
                 INSERT INTO market_arrivals_common (
                     state_name, market_name, commodity_name,
-                    arrival_quantity, arrival_unit,
+                    commodity_uuiq, arrival_quantity, arrival_unit,
                     source, report_date
-                ) VALUES ($1, $2, $3, $4, $5, $6, $7)
+                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
                 ON CONFLICT (report_date, source, state_name, market_name, commodity_name) 
                 DO UPDATE SET
                     arrival_quantity = EXCLUDED.arrival_quantity,
-                    arrival_unit = EXCLUDED.arrival_unit
+                    arrival_unit = EXCLUDED.arrival_unit,
+                    commodity_uuiq = EXCLUDED.commodity_uuiq
             `, [
                 toTitleCase(row.state_name),
                 toTitleCase(row.apmc_name),
                 row.commodity_name,
+                row.commodity_uuiq,
                 quantityMT > 0 ? quantityMT : rawQty, // If converted use MT, else raw
                 quantityMT > 0 ? 'MT' : row.unit_name_price, // 'MT' or original
                 'eNAM',

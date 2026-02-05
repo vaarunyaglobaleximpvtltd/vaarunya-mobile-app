@@ -6,2717 +6,3260 @@
             {
                 "cmdt_id": 380,
                 "cmdt_name": "Absinthe",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR380"
             },
             {
                 "cmdt_id": 454,
                 "cmdt_name": "Ajwain Husk",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR454"
             },
             {
                 "cmdt_id": 115,
                 "cmdt_name": "Ajwan",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR115"
             },
             {
                 "cmdt_id": 234,
                 "cmdt_name": "Alasande Gram",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR234"
             },
             {
                 "cmdt_id": 275,
                 "cmdt_name": "Almond(Badam)",
-                "cmdt_group_id": 8
+                "cmdt_group_id": 8,
+                "uuiq": "VAAR275"
             },
             {
                 "cmdt_id": 455,
                 "cmdt_name": "Aloe Vera",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR455"
             },
             {
                 "cmdt_id": 138,
                 "cmdt_name": "Alsandikai",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR138"
             },
             {
                 "cmdt_id": 72,
                 "cmdt_name": "Amaranthus",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR72"
             },
             {
                 "cmdt_id": 112,
                 "cmdt_name": "Ambada Seed",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR112"
             },
             {
                 "cmdt_id": 346,
                 "cmdt_name": "Ambady/Mesta",
-                "cmdt_group_id": 4
+                "cmdt_group_id": 4,
+                "uuiq": "VAAR346"
             },
             {
                 "cmdt_id": 456,
                 "cmdt_name": "Ambat Chuka",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR456"
             },
             {
                 "cmdt_id": 303,
                 "cmdt_name": "Amla(Nelli Kai)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR303"
             },
             {
                 "cmdt_id": 348,
                 "cmdt_name": "Amranthas Red",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR348"
             },
             {
                 "cmdt_id": 169,
                 "cmdt_name": "Antawala",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR169"
             },
             {
                 "cmdt_id": 326,
                 "cmdt_name": "Anthorium",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR326"
             },
             {
                 "cmdt_id": 17,
                 "cmdt_name": "Apple",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR17"
             },
             {
                 "cmdt_id": 276,
                 "cmdt_name": "Apricot(Jardalu/Khumani)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR276"
             },
             {
                 "cmdt_id": 118,
                 "cmdt_name": "Arecanut(Betelnut/Supari)",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR118"
             },
             {
                 "cmdt_id": 214,
                 "cmdt_name": "Arhar Dal(Tur Dal)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR214"
             },
             {
                 "cmdt_id": 45,
                 "cmdt_name": "Arhar(Tur/Red Gram)(Whole)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR45"
             },
             {
                 "cmdt_id": 457,
                 "cmdt_name": "Arrowroot",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR457"
             },
             {
                 "cmdt_id": 373,
                 "cmdt_name": "Asalia",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR373"
             },
             {
                 "cmdt_id": 434,
                 "cmdt_name": "Asgand",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR434"
             },
             {
                 "cmdt_id": 69,
                 "cmdt_name": "Ashgourd",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR69"
             },
             {
                 "cmdt_id": 435,
                 "cmdt_name": "Ashoka",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR435"
             },
             {
                 "cmdt_id": 372,
                 "cmdt_name": "Ashwagandha",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR372"
             },
             {
                 "cmdt_id": 363,
                 "cmdt_name": "Asparagus",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR363"
             },
             {
                 "cmdt_id": 190,
                 "cmdt_name": "Astera",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR190"
             },
             {
                 "cmdt_id": 436,
                 "cmdt_name": "Atis",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR436"
             },
             {
                 "cmdt_id": 223,
                 "cmdt_name": "Avare Dal",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR223"
             },
             {
                 "cmdt_id": 458,
                 "cmdt_name": "Avocado",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR458"
             },
             {
                 "cmdt_id": 327,
                 "cmdt_name": "BOP",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR327"
             },
             {
                 "cmdt_id": 459,
                 "cmdt_name": "Baby Corn",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR459"
             },
             {
                 "cmdt_id": 347,
                 "cmdt_name": "Bael",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR347"
             },
             {
                 "cmdt_id": 420,
                 "cmdt_name": "Bajji chilli",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR420"
             },
             {
                 "cmdt_id": 28,
                 "cmdt_name": "Bajra(Pearl Millet/Cumbu)",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR28"
             },
             {
                 "cmdt_id": 228,
                 "cmdt_name": "Balekai",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR228"
             },
             {
                 "cmdt_id": 164,
                 "cmdt_name": "Bamboo",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR164"
             },
             {
                 "cmdt_id": 460,
                 "cmdt_name": "Bamboo Shoot",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR460"
             },
             {
                 "cmdt_id": 19,
                 "cmdt_name": "Banana",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR19"
             },
             {
                 "cmdt_id": 76,
                 "cmdt_name": "Banana - Green",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR76"
             },
             {
                 "cmdt_id": 414,
                 "cmdt_name": "Banana Leaf",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR414"
             },
             {
                 "cmdt_id": 412,
                 "cmdt_name": "Banana flower",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR412"
             },
             {
                 "cmdt_id": 413,
                 "cmdt_name": "Banana stem",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR413"
             },
             {
                 "cmdt_id": 29,
                 "cmdt_name": "Barley(Jau)",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR29"
             },
             {
                 "cmdt_id": 461,
                 "cmdt_name": "Barnyard Millet",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR461"
             },
             {
                 "cmdt_id": 271,
                 "cmdt_name": "Bay leaf(Tejpatta)",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR271"
             },
             {
                 "cmdt_id": 80,
                 "cmdt_name": "Beans",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR80"
             },
             {
                 "cmdt_id": 216,
                 "cmdt_name": "Beaten Rice",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR216"
             },
             {
                 "cmdt_id": 129,
                 "cmdt_name": "Beetroot",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR129"
             },
             {
                 "cmdt_id": 437,
                 "cmdt_name": "Behada",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR437"
             },
             {
                 "cmdt_id": 217,
                 "cmdt_name": "Bengal Gram Dal(Chana Dal)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR217"
             },
             {
                 "cmdt_id": 6,
                 "cmdt_name": "Bengal Gram(Gram)(Whole)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR6"
             },
             {
                 "cmdt_id": 304,
                 "cmdt_name": "Ber(Zizyphus/Borehannu)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR304"
             },
             {
                 "cmdt_id": 121,
                 "cmdt_name": "Betal Leaves",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR121"
             },
             {
                 "cmdt_id": 37,
                 "cmdt_name": "Betelnuts",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR37"
             },
             {
                 "cmdt_id": 71,
                 "cmdt_name": "Bhindi(Ladies Finger)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR71"
             },
             {
                 "cmdt_id": 377,
                 "cmdt_name": "Bhui Amlaya",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR377"
             },
             {
                 "cmdt_id": 97,
                 "cmdt_name": "Big Gram",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR97"
             },
             {
                 "cmdt_id": 462,
                 "cmdt_name": "Bilimbi",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR462"
             },
             {
                 "cmdt_id": 47,
                 "cmdt_name": "Binoula",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR47"
             },
             {
                 "cmdt_id": 67,
                 "cmdt_name": "Bitter gourd",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR67"
             },
             {
                 "cmdt_id": 463,
                 "cmdt_name": "Black Currant",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR463"
             },
             {
                 "cmdt_id": 218,
                 "cmdt_name": "Black Gram Dal(Urd Dal)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR218"
             },
             {
                 "cmdt_id": 8,
                 "cmdt_name": "Black Gram(Urd Beans)(Whole)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR8"
             },
             {
                 "cmdt_id": 34,
                 "cmdt_name": "Black pepper",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR34"
             },
             {
                 "cmdt_id": 464,
                 "cmdt_name": "Blueberry",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR464"
             },
             {
                 "cmdt_id": 159,
                 "cmdt_name": "Borehannu",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR159"
             },
             {
                 "cmdt_id": 68,
                 "cmdt_name": "Bottle gourd",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR68"
             },
             {
                 "cmdt_id": 378,
                 "cmdt_name": "Brahmi",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR378"
             },
             {
                 "cmdt_id": 242,
                 "cmdt_name": "Bran",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR242"
             },
             {
                 "cmdt_id": 426,
                 "cmdt_name": "Bread Fruit",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR426"
             },
             {
                 "cmdt_id": 32,
                 "cmdt_name": "Brinjal",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR32"
             },
             {
                 "cmdt_id": 416,
                 "cmdt_name": "Brocoli",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR416"
             },
             {
                 "cmdt_id": 244,
                 "cmdt_name": "Broken Rice",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR244"
             },
             {
                 "cmdt_id": 270,
                 "cmdt_name": "Broomstick(Flower Broom)",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR270"
             },
             {
                 "cmdt_id": 465,
                 "cmdt_name": "Browntop Millet",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR465"
             },
             {
                 "cmdt_id": 173,
                 "cmdt_name": "Bull",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR173"
             },
             {
                 "cmdt_id": 237,
                 "cmdt_name": "Bullar",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR237"
             },
             {
                 "cmdt_id": 183,
                 "cmdt_name": "Bunch Beans",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR183"
             },
             {
                 "cmdt_id": 226,
                 "cmdt_name": "Butter",
-                "cmdt_group_id": 15
+                "cmdt_group_id": 15,
+                "uuiq": "VAAR226"
             },
             {
                 "cmdt_id": 126,
                 "cmdt_name": "Cabbage",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR126"
             },
             {
                 "cmdt_id": 409,
                 "cmdt_name": "Calendula",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR409"
             },
             {
                 "cmdt_id": 174,
                 "cmdt_name": "Calf",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR174"
             },
             {
                 "cmdt_id": 302,
                 "cmdt_name": "Camel Hair",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR302"
             },
             {
                 "cmdt_id": 165,
                 "cmdt_name": "Cane",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR165"
             },
             {
                 "cmdt_id": 136,
                 "cmdt_name": "Capsicum",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR136"
             },
             {
                 "cmdt_id": 36,
                 "cmdt_name": "Cardamoms",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR36"
             },
             {
                 "cmdt_id": 466,
                 "cmdt_name": "Carissa(Karvand)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR466"
             },
             {
                 "cmdt_id": 322,
                 "cmdt_name": "Carnation",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR322"
             },
             {
                 "cmdt_id": 125,
                 "cmdt_name": "Carrot",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR125"
             },
             {
                 "cmdt_id": 196,
                 "cmdt_name": "Cashew Kernnel",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR196"
             },
             {
                 "cmdt_id": 33,
                 "cmdt_name": "Cashewnuts",
-                "cmdt_group_id": 8
+                "cmdt_group_id": 8,
+                "uuiq": "VAAR33"
             },
             {
                 "cmdt_id": 224,
                 "cmdt_name": "Castor Oil",
-                "cmdt_group_id": 15
+                "cmdt_group_id": 15,
+                "uuiq": "VAAR224"
             },
             {
                 "cmdt_id": 106,
                 "cmdt_name": "Castor Seed",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR106"
             },
             {
                 "cmdt_id": 31,
                 "cmdt_name": "Cauliflower",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR31"
             },
             {
                 "cmdt_id": 467,
                 "cmdt_name": "Chakhao(Black Rice)",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR467"
             },
             {
                 "cmdt_id": 158,
                 "cmdt_name": "Chakotha",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR158"
             },
             {
                 "cmdt_id": 367,
                 "cmdt_name": "Chandrashoor",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR367"
             },
             {
                 "cmdt_id": 141,
                 "cmdt_name": "Chapparad Avare",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR141"
             },
             {
                 "cmdt_id": 246,
                 "cmdt_name": "Chennangi Dal",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR246"
             },
             {
                 "cmdt_id": 198,
                 "cmdt_name": "Chennangi(Whole)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR198"
             },
             {
                 "cmdt_id": 278,
                 "cmdt_name": "Cherry",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR278"
             },
             {
                 "cmdt_id": 468,
                 "cmdt_name": "Chhappan Kaddu",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR468"
             },
             {
                 "cmdt_id": 58,
                 "cmdt_name": "Chikoos(Sapota)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR58"
             },
             {
                 "cmdt_id": 26,
                 "cmdt_name": "Chili Red",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR26"
             },
             {
                 "cmdt_id": 74,
                 "cmdt_name": "Chilly Capsicum",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR74"
             },
             {
                 "cmdt_id": 438,
                 "cmdt_name": "Chironji",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR438"
             },
             {
                 "cmdt_id": 139,
                 "cmdt_name": "Chow Chow",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR139"
             },
             {
                 "cmdt_id": 331,
                 "cmdt_name": "Chrysanthemum",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR331"
             },
             {
                 "cmdt_id": 189,
                 "cmdt_name": "Chrysanthemum(Loose)",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR189"
             },
             {
                 "cmdt_id": 267,
                 "cmdt_name": "Cinamon(Dalchini)",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR267"
             },
             {
                 "cmdt_id": 407,
                 "cmdt_name": "Clarkia",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR407"
             },
             {
                 "cmdt_id": 89,
                 "cmdt_name": "Cloves",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR89"
             },
             {
                 "cmdt_id": 66,
                 "cmdt_name": "Cluster beans",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR66"
             },
             {
                 "cmdt_id": 266,
                 "cmdt_name": "Coca",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR266"
             },
             {
                 "cmdt_id": 315,
                 "cmdt_name": "Cock",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR315"
             },
             {
                 "cmdt_id": 88,
                 "cmdt_name": "Cocoa",
-                "cmdt_group_id": 9
+                "cmdt_group_id": 9,
+                "uuiq": "VAAR88"
             },
             {
                 "cmdt_id": 116,
                 "cmdt_name": "Coconut",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR116"
             },
             {
                 "cmdt_id": 469,
                 "cmdt_name": "Coconut Coir",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR469"
             },
             {
                 "cmdt_id": 220,
                 "cmdt_name": "Coconut Oil",
-                "cmdt_group_id": 15
+                "cmdt_group_id": 15,
+                "uuiq": "VAAR220"
             },
             {
                 "cmdt_id": 96,
                 "cmdt_name": "Coconut Seed",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR96"
             },
             {
                 "cmdt_id": 41,
                 "cmdt_name": "Coffee",
-                "cmdt_group_id": 9
+                "cmdt_group_id": 9,
+                "uuiq": "VAAR41"
             },
             {
                 "cmdt_id": 269,
                 "cmdt_name": "Colacasia",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR269"
             },
             {
                 "cmdt_id": 470,
                 "cmdt_name": "Coleus",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR470"
             },
             {
                 "cmdt_id": 111,
                 "cmdt_name": "Copra",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR111"
             },
             {
                 "cmdt_id": 39,
                 "cmdt_name": "Coriander(Leaves)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR39"
             },
             {
                 "cmdt_id": 92,
                 "cmdt_name": "Corriander seed",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR92"
             },
             {
                 "cmdt_id": 401,
                 "cmdt_name": "Cossandra",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR401"
             },
             {
                 "cmdt_id": 15,
                 "cmdt_name": "Cotton",
-                "cmdt_group_id": 4
+                "cmdt_group_id": 4,
+                "uuiq": "VAAR15"
             },
             {
                 "cmdt_id": 84,
                 "cmdt_name": "Cotton Seed",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR84"
             },
             {
                 "cmdt_id": 171,
                 "cmdt_name": "Cow",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR171"
             },
             {
                 "cmdt_id": 78,
                 "cmdt_name": "Cowpea(Lobia/Karamani)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR78"
             },
             {
                 "cmdt_id": 75,
                 "cmdt_name": "Cowpea(Veg)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR75"
             },
             {
                 "cmdt_id": 471,
                 "cmdt_name": "Crab",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR471"
             },
             {
                 "cmdt_id": 131,
                 "cmdt_name": "Cucumbar(Kheera)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR131"
             },
             {
                 "cmdt_id": 38,
                 "cmdt_name": "Cummin Seed(Jeera)",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR38"
             },
             {
                 "cmdt_id": 415,
                 "cmdt_name": "Curry Leaf",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR415"
             },
             {
                 "cmdt_id": 300,
                 "cmdt_name": "Custard Apple(Sharifa)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR300"
             },
             {
                 "cmdt_id": 329,
                 "cmdt_name": "Daila(Chandni)",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR329"
             },
             {
                 "cmdt_id": 77,
                 "cmdt_name": "Dal(Avare)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR77"
             },
             {
                 "cmdt_id": 227,
                 "cmdt_name": "Dalda",
-                "cmdt_group_id": 15
+                "cmdt_group_id": 15,
+                "uuiq": "VAAR227"
             },
             {
                 "cmdt_id": 472,
                 "cmdt_name": "Dates",
-                "cmdt_group_id": 8
+                "cmdt_group_id": 8,
+                "uuiq": "VAAR472"
             },
             {
                 "cmdt_id": 339,
                 "cmdt_name": "Delha",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR339"
             },
             {
                 "cmdt_id": 57,
                 "cmdt_name": "Dhaincha",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR57"
             },
             {
                 "cmdt_id": 421,
                 "cmdt_name": "Double Beans",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR421"
             },
             {
                 "cmdt_id": 424,
                 "cmdt_name": "Dragon fruit",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR424"
             },
             {
                 "cmdt_id": 140,
                 "cmdt_name": "Drumstick",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR140"
             },
             {
                 "cmdt_id": 113,
                 "cmdt_name": "Dry Chillies",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR113"
             },
             {
                 "cmdt_id": 473,
                 "cmdt_name": "Dry Fish",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR473"
             },
             {
                 "cmdt_id": 293,
                 "cmdt_name": "Dry Fodder",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR293"
             },
             {
                 "cmdt_id": 231,
                 "cmdt_name": "Dry Grapes",
-                "cmdt_group_id": 8
+                "cmdt_group_id": 8,
+                "uuiq": "VAAR231"
             },
             {
                 "cmdt_id": 317,
                 "cmdt_name": "Duck",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR317"
             },
             {
                 "cmdt_id": 135,
                 "cmdt_name": "Duster Beans",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR135"
             },
             {
                 "cmdt_id": 314,
                 "cmdt_name": "Egg",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR314"
             },
             {
                 "cmdt_id": 308,
                 "cmdt_name": "Egypian Clover(Barseem)",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR308"
             },
             {
                 "cmdt_id": 247,
                 "cmdt_name": "Elephant Yam(Suran)/Amorphophallus",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR247"
             },
             {
                 "cmdt_id": 474,
                 "cmdt_name": "Field Bean(Anumulu)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR474"
             },
             {
                 "cmdt_id": 475,
                 "cmdt_name": "Field Gram",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR475"
             },
             {
                 "cmdt_id": 53,
                 "cmdt_name": "Field Pea",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR53"
             },
             {
                 "cmdt_id": 476,
                 "cmdt_name": "Fig (Dry)",
-                "cmdt_group_id": 8
+                "cmdt_group_id": 8,
+                "uuiq": "VAAR476"
             },
             {
                 "cmdt_id": 180,
                 "cmdt_name": "Fig(Anjura/Anjeer)",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR180"
             },
             {
                 "cmdt_id": 166,
                 "cmdt_name": "Firewood",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR166"
             },
             {
                 "cmdt_id": 313,
                 "cmdt_name": "Fish",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR313"
             },
             {
                 "cmdt_id": 439,
                 "cmdt_name": "Flax seeds",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR439"
             },
             {
                 "cmdt_id": 312,
                 "cmdt_name": "Flower Broom",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR312"
             },
             {
                 "cmdt_id": 104,
                 "cmdt_name": "Foxtail Millet(Navane)",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR104"
             },
             {
                 "cmdt_id": 249,
                 "cmdt_name": "French Beans(Frasbean)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR249"
             },
             {
                 "cmdt_id": 298,
                 "cmdt_name": "Galgal(Lemon)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR298"
             },
             {
                 "cmdt_id": 400,
                 "cmdt_name": "Gamphrena",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR400"
             },
             {
                 "cmdt_id": 477,
                 "cmdt_name": "Garcinia",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR477"
             },
             {
                 "cmdt_id": 25,
                 "cmdt_name": "Garlic",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR25"
             },
             {
                 "cmdt_id": 478,
                 "cmdt_name": "Gerbera",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR478"
             },
             {
                 "cmdt_id": 206,
                 "cmdt_name": "Ghee",
-                "cmdt_group_id": 15
+                "cmdt_group_id": 15,
+                "uuiq": "VAAR206"
             },
             {
                 "cmdt_id": 479,
                 "cmdt_name": "Gherkin",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR479"
             },
             {
                 "cmdt_id": 480,
                 "cmdt_name": "Ghost Pepper(King Chilli)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR480"
             },
             {
                 "cmdt_id": 381,
                 "cmdt_name": "Giloy",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR381"
             },
             {
                 "cmdt_id": 229,
                 "cmdt_name": "Gingelly Oil",
-                "cmdt_group_id": 15
+                "cmdt_group_id": 15,
+                "uuiq": "VAAR229"
             },
             {
                 "cmdt_id": 481,
                 "cmdt_name": "Ginger Seed",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR481"
             },
             {
                 "cmdt_id": 27,
                 "cmdt_name": "Ginger(Dry)",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR27"
             },
             {
                 "cmdt_id": 87,
                 "cmdt_name": "Ginger(Green)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR87"
             },
             {
                 "cmdt_id": 311,
                 "cmdt_name": "Gladiolus Bulb",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR311"
             },
             {
                 "cmdt_id": 310,
                 "cmdt_name": "Gladiolus Cut Flower",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR310"
             },
             {
                 "cmdt_id": 391,
                 "cmdt_name": "Glardia",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR391"
             },
             {
                 "cmdt_id": 178,
                 "cmdt_name": "Goat",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR178"
             },
             {
                 "cmdt_id": 301,
                 "cmdt_name": "Goat Hair",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR301"
             },
             {
                 "cmdt_id": 440,
                 "cmdt_name": "Gond",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR440"
             },
             {
                 "cmdt_id": 423,
                 "cmdt_name": "Goose berry(Nellikkai)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR423"
             },
             {
                 "cmdt_id": 482,
                 "cmdt_name": "Goosefoot",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR482"
             },
             {
                 "cmdt_id": 306,
                 "cmdt_name": "Gram Raw(Chholia)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR306"
             },
             {
                 "cmdt_id": 245,
                 "cmdt_name": "Gramflour",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR245"
             },
             {
                 "cmdt_id": 22,
                 "cmdt_name": "Grapes",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR22"
             },
             {
                 "cmdt_id": 137,
                 "cmdt_name": "Green Avare(W)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR137"
             },
             {
                 "cmdt_id": 73,
                 "cmdt_name": "Green Chilli",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR73"
             },
             {
                 "cmdt_id": 294,
                 "cmdt_name": "Green Fodder",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR294"
             },
             {
                 "cmdt_id": 219,
                 "cmdt_name": "Green Gram Dal(Moong Dal)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR219"
             },
             {
                 "cmdt_id": 9,
                 "cmdt_name": "Green Gram(Moong)(Whole)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR9"
             },
             {
                 "cmdt_id": 46,
                 "cmdt_name": "Green Peas",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR46"
             },
             {
                 "cmdt_id": 483,
                 "cmdt_name": "Green Tea",
-                "cmdt_group_id": 9
+                "cmdt_group_id": 9,
+                "uuiq": "VAAR483"
             },
             {
                 "cmdt_id": 484,
                 "cmdt_name": "Grey Fruit",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR484"
             },
             {
                 "cmdt_id": 221,
                 "cmdt_name": "Ground Nut Oil",
-                "cmdt_group_id": 15
+                "cmdt_group_id": 15,
+                "uuiq": "VAAR221"
             },
             {
                 "cmdt_id": 222,
                 "cmdt_name": "Ground Nut Seed",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR222"
             },
             {
                 "cmdt_id": 10,
                 "cmdt_name": "Groundnut",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR10"
             },
             {
                 "cmdt_id": 263,
                 "cmdt_name": "Groundnut pods(raw)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR263"
             },
             {
                 "cmdt_id": 265,
                 "cmdt_name": "Groundnut(Split)",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR265"
             },
             {
                 "cmdt_id": 62,
                 "cmdt_name": "Guar",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR62"
             },
             {
                 "cmdt_id": 342,
                 "cmdt_name": "Guar Seed(Cluster Beans Seed)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR342"
             },
             {
                 "cmdt_id": 156,
                 "cmdt_name": "Guava",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR156"
             },
             {
                 "cmdt_id": 382,
                 "cmdt_name": "Gudmar",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR382"
             },
             {
                 "cmdt_id": 383,
                 "cmdt_name": "Guggal",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR383"
             },
             {
                 "cmdt_id": 61,
                 "cmdt_name": "Gur(Jaggery)",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR61"
             },
             {
                 "cmdt_id": 232,
                 "cmdt_name": "Gurellu",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR232"
             },
             {
                 "cmdt_id": 208,
                 "cmdt_name": "Haralekai",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR208"
             },
             {
                 "cmdt_id": 441,
                 "cmdt_name": "Harrah",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR441"
             },
             {
                 "cmdt_id": 175,
                 "cmdt_name": "He Buffalo",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR175"
             },
             {
                 "cmdt_id": 403,
                 "cmdt_name": "Heliconia species",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR403"
             },
             {
                 "cmdt_id": 316,
                 "cmdt_name": "Hen",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR316"
             },
             {
                 "cmdt_id": 485,
                 "cmdt_name": "Hilsa",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR485"
             },
             {
                 "cmdt_id": 108,
                 "cmdt_name": "Hippe Seed",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR108"
             },
             {
                 "cmdt_id": 486,
                 "cmdt_name": "Hog Plum",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR486"
             },
             {
                 "cmdt_id": 194,
                 "cmdt_name": "Honey",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR194"
             },
             {
                 "cmdt_id": 107,
                 "cmdt_name": "Honge seed",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR107"
             },
             {
                 "cmdt_id": 102,
                 "cmdt_name": "Hybrid Cumbu",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR102"
             },
             {
                 "cmdt_id": 250,
                 "cmdt_name": "Indian Beans(Seam)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR250"
             },
             {
                 "cmdt_id": 292,
                 "cmdt_name": "Indian Colza(Sarson)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR292"
             },
             {
                 "cmdt_id": 487,
                 "cmdt_name": "Indian Sherbet Berry(Phalsa)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR487"
             },
             {
                 "cmdt_id": 394,
                 "cmdt_name": "Irish",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR394"
             },
             {
                 "cmdt_id": 212,
                 "cmdt_name": "Isabgul(Psyllium)",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR212"
             },
             {
                 "cmdt_id": 488,
                 "cmdt_name": "Isbgol",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR488"
             },
             {
                 "cmdt_id": 153,
                 "cmdt_name": "Jack Fruit",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR153"
             },
             {
                 "cmdt_id": 489,
                 "cmdt_name": "Jackfruit Seed",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR489"
             },
             {
                 "cmdt_id": 442,
                 "cmdt_name": "Jaee",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR442"
             },
             {
                 "cmdt_id": 335,
                 "cmdt_name": "Jaffri",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR335"
             },
             {
                 "cmdt_id": 123,
                 "cmdt_name": "Jaggery",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR123"
             },
             {
                 "cmdt_id": 147,
                 "cmdt_name": "Jamamkhan",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR147"
             },
             {
                 "cmdt_id": 155,
                 "cmdt_name": "Jamun(Narale Hannu)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR155"
             },
             {
                 "cmdt_id": 323,
                 "cmdt_name": "Jarbara",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR323"
             },
             {
                 "cmdt_id": 187,
                 "cmdt_name": "Jasmine",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR187"
             },
             {
                 "cmdt_id": 207,
                 "cmdt_name": "Javi",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR207"
             },
             {
                 "cmdt_id": 5,
                 "cmdt_name": "Jowar(Sorghum)",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR5"
             },
             {
                 "cmdt_id": 16,
                 "cmdt_name": "Jute",
-                "cmdt_group_id": 4
+                "cmdt_group_id": 4,
+                "uuiq": "VAAR16"
             },
             {
                 "cmdt_id": 170,
                 "cmdt_name": "Jute Seed",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR170"
             },
             {
                 "cmdt_id": 309,
                 "cmdt_name": "Kabuli Chana(Chickpeas-White)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR309"
             },
             {
                 "cmdt_id": 268,
                 "cmdt_name": "Kacholam",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR268"
             },
             {
                 "cmdt_id": 490,
                 "cmdt_name": "Kagda",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR490"
             },
             {
                 "cmdt_id": 188,
                 "cmdt_name": "Kakada",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR188"
             },
             {
                 "cmdt_id": 385,
                 "cmdt_name": "Kalihari",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR385"
             },
             {
                 "cmdt_id": 386,
                 "cmdt_name": "Kalmegh",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR386"
             },
             {
                 "cmdt_id": 191,
                 "cmdt_name": "Kankambra",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR191"
             },
             {
                 "cmdt_id": 99,
                 "cmdt_name": "Karamani",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR99"
             },
             {
                 "cmdt_id": 157,
                 "cmdt_name": "Karbuja(Musk Melon)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR157"
             },
             {
                 "cmdt_id": 256,
                 "cmdt_name": "Kartali(Kantola)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR256"
             },
             {
                 "cmdt_id": 410,
                 "cmdt_name": "Kevda",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR410"
             },
             {
                 "cmdt_id": 50,
                 "cmdt_name": "Kharif Mash",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR50"
             },
             {
                 "cmdt_id": 443,
                 "cmdt_name": "Khirni",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR443"
             },
             {
                 "cmdt_id": 319,
                 "cmdt_name": "Khoya",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR319"
             },
             {
                 "cmdt_id": 491,
                 "cmdt_name": "Kidney Beans(Rajma)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR491"
             },
             {
                 "cmdt_id": 284,
                 "cmdt_name": "Kinnow",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR284"
             },
             {
                 "cmdt_id": 492,
                 "cmdt_name": "Kiwi Fruit",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR492"
             },
             {
                 "cmdt_id": 149,
                 "cmdt_name": "Knool Khol",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR149"
             },
             {
                 "cmdt_id": 101,
                 "cmdt_name": "Kodo Millet(Varagu)",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR101"
             },
             {
                 "cmdt_id": 388,
                 "cmdt_name": "Kooth",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR388"
             },
             {
                 "cmdt_id": 200,
                 "cmdt_name": "Kuchur",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR200"
             },
             {
                 "cmdt_id": 493,
                 "cmdt_name": "Kuchur - Kusum Seed",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR493"
             },
             {
                 "cmdt_id": 98,
                 "cmdt_name": "Kulthi(Horse Gram)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR98"
             },
             {
                 "cmdt_id": 344,
                 "cmdt_name": "Kutki",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR344"
             },
             {
                 "cmdt_id": 127,
                 "cmdt_name": "Ladies Finger",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR127"
             },
             {
                 "cmdt_id": 444,
                 "cmdt_name": "Laha",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR444"
             },
             {
                 "cmdt_id": 81,
                 "cmdt_name": "Lak(Teora)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR81"
             },
             {
                 "cmdt_id": 494,
                 "cmdt_name": "Large Cardamom",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR494"
             },
             {
                 "cmdt_id": 143,
                 "cmdt_name": "Leafy Vegetable",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR143"
             },
             {
                 "cmdt_id": 495,
                 "cmdt_name": "Leek",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR495"
             },
             {
                 "cmdt_id": 261,
                 "cmdt_name": "Lemon",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR261"
             },
             {
                 "cmdt_id": 496,
                 "cmdt_name": "Lemongrass",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR496"
             },
             {
                 "cmdt_id": 52,
                 "cmdt_name": "Lentil(Masur)(Whole)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR52"
             },
             {
                 "cmdt_id": 497,
                 "cmdt_name": "Lesser Yam",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR497"
             },
             {
                 "cmdt_id": 325,
                 "cmdt_name": "Lilly",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR325"
             },
             {
                 "cmdt_id": 151,
                 "cmdt_name": "Lime",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR151"
             },
             {
                 "cmdt_id": 399,
                 "cmdt_name": "Limonia(status)",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR399"
             },
             {
                 "cmdt_id": 56,
                 "cmdt_name": "Linseed",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR56"
             },
             {
                 "cmdt_id": 233,
                 "cmdt_name": "Lint",
-                "cmdt_group_id": 4
+                "cmdt_group_id": 4,
+                "uuiq": "VAAR233"
             },
             {
                 "cmdt_id": 299,
                 "cmdt_name": "Litchi",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR299"
             },
             {
                 "cmdt_id": 498,
                 "cmdt_name": "Little Millet ",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR498"
             },
             {
                 "cmdt_id": 253,
                 "cmdt_name": "Little gourd(Kundru)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR253"
             },
             {
                 "cmdt_id": 255,
                 "cmdt_name": "Long Melon(Kakri)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR255"
             },
             {
                 "cmdt_id": 332,
                 "cmdt_name": "Lotus",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR332"
             },
             {
                 "cmdt_id": 287,
                 "cmdt_name": "Lotus Sticks",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR287"
             },
             {
                 "cmdt_id": 285,
                 "cmdt_name": "Lukad",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR285"
             },
             {
                 "cmdt_id": 408,
                 "cmdt_name": "Lupine",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR408"
             },
             {
                 "cmdt_id": 433,
                 "cmdt_name": "Ma.Inji",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR433"
             },
             {
                 "cmdt_id": 91,
                 "cmdt_name": "Mace",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR91"
             },
             {
                 "cmdt_id": 340,
                 "cmdt_name": "Mahedi",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR340"
             },
             {
                 "cmdt_id": 283,
                 "cmdt_name": "Mahua",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR283"
             },
             {
                 "cmdt_id": 318,
                 "cmdt_name": "Mahua Seed(Hippe seed)",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR318"
             },
             {
                 "cmdt_id": 241,
                 "cmdt_name": "Maida Atta",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR241"
             },
             {
                 "cmdt_id": 4,
                 "cmdt_name": "Maize",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR4"
             },
             {
                 "cmdt_id": 20,
                 "cmdt_name": "Mango",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR20"
             },
             {
                 "cmdt_id": 144,
                 "cmdt_name": "Mango(Raw-Ripe)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR144"
             },
             {
                 "cmdt_id": 499,
                 "cmdt_name": "Mangosteen",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR499"
             },
             {
                 "cmdt_id": 184,
                 "cmdt_name": "Maragensu",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR184"
             },
             {
                 "cmdt_id": 152,
                 "cmdt_name": "Marasebu",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR152"
             },
             {
                 "cmdt_id": 336,
                 "cmdt_name": "Marget",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR336"
             },
             {
                 "cmdt_id": 193,
                 "cmdt_name": "Marigold(Calcutta)",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR193"
             },
             {
                 "cmdt_id": 334,
                 "cmdt_name": "Marigold(loose)",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR334"
             },
             {
                 "cmdt_id": 431,
                 "cmdt_name": "Marikozhunthu",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR431"
             },
             {
                 "cmdt_id": 49,
                 "cmdt_name": "Mash",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR49"
             },
             {
                 "cmdt_id": 288,
                 "cmdt_name": "Mashrooms",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR288"
             },
             {
                 "cmdt_id": 213,
                 "cmdt_name": "Masur Dal",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR213"
             },
             {
                 "cmdt_id": 79,
                 "cmdt_name": "Mataki",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR79"
             },
             {
                 "cmdt_id": 500,
                 "cmdt_name": "Meal Maker (Soya Chunks)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR500"
             },
             {
                 "cmdt_id": 501,
                 "cmdt_name": "Mentha Oil",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR501"
             },
             {
                 "cmdt_id": 43,
                 "cmdt_name": "Methi Seeds",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR43"
             },
             {
                 "cmdt_id": 42,
                 "cmdt_name": "Methi(Leaves)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR42"
             },
             {
                 "cmdt_id": 195,
                 "cmdt_name": "Millets",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR195"
             },
             {
                 "cmdt_id": 307,
                 "cmdt_name": "Mint(Pudina)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR307"
             },
             {
                 "cmdt_id": 452,
                 "cmdt_name": "Moath Dal",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR452"
             },
             {
                 "cmdt_id": 64,
                 "cmdt_name": "Mousambi(Sweet Lime)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR64"
             },
             {
                 "cmdt_id": 375,
                 "cmdt_name": "Muesli",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR375"
             },
             {
                 "cmdt_id": 502,
                 "cmdt_name": "Mulberry",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR502"
             },
             {
                 "cmdt_id": 357,
                 "cmdt_name": "Muleti",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR357"
             },
             {
                 "cmdt_id": 445,
                 "cmdt_name": "Muskmelon Seeds",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR445"
             },
             {
                 "cmdt_id": 12,
                 "cmdt_name": "Mustard",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR12"
             },
             {
                 "cmdt_id": 274,
                 "cmdt_name": "Mustard Oil",
-                "cmdt_group_id": 15
+                "cmdt_group_id": 15,
+                "uuiq": "VAAR274"
             },
             {
                 "cmdt_id": 120,
                 "cmdt_name": "Myrobolan(Harad)",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR120"
             },
             {
                 "cmdt_id": 202,
                 "cmdt_name": "Nargasi",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR202"
             },
             {
                 "cmdt_id": 181,
                 "cmdt_name": "Nearle Hannu",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR181"
             },
             {
                 "cmdt_id": 503,
                 "cmdt_name": "Neem Fruits",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR503"
             },
             {
                 "cmdt_id": 109,
                 "cmdt_name": "Neem Seed",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR109"
             },
             {
                 "cmdt_id": 182,
                 "cmdt_name": "Nelli Kai",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR182"
             },
             {
                 "cmdt_id": 429,
                 "cmdt_name": "Nerium",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR429"
             },
             {
                 "cmdt_id": 83,
                 "cmdt_name": "Niger Seed(Ramtil)",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR83"
             },
             {
                 "cmdt_id": 90,
                 "cmdt_name": "Nutmeg",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR90"
             },
             {
                 "cmdt_id": 23,
                 "cmdt_name": "Onion",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR23"
             },
             {
                 "cmdt_id": 305,
                 "cmdt_name": "Onion Green",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR305"
             },
             {
                 "cmdt_id": 18,
                 "cmdt_name": "Orange",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR18"
             },
             {
                 "cmdt_id": 328,
                 "cmdt_name": "Orchid",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR328"
             },
             {
                 "cmdt_id": 82,
                 "cmdt_name": "Other Pulses",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR82"
             },
             {
                 "cmdt_id": 349,
                 "cmdt_name": "Other green and fresh vegetables",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR349"
             },
             {
                 "cmdt_id": 172,
                 "cmdt_name": "Ox",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR172"
             },
             {
                 "cmdt_id": 343,
                 "cmdt_name": "Paddy(Basmati)",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR343"
             },
             {
                 "cmdt_id": 2,
                 "cmdt_name": "Paddy(Common)",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR2"
             },
             {
                 "cmdt_id": 370,
                 "cmdt_name": "Palash flowers",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR370"
             },
             {
                 "cmdt_id": 59,
                 "cmdt_name": "Papaya",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR59"
             },
             {
                 "cmdt_id": 264,
                 "cmdt_name": "Papaya(Raw)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR264"
             },
             {
                 "cmdt_id": 504,
                 "cmdt_name": "Passion Fruit",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR504"
             },
             {
                 "cmdt_id": 333,
                 "cmdt_name": "Patti Calcutta",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR333"
             },
             {
                 "cmdt_id": 281,
                 "cmdt_name": "Peach",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR281"
             },
             {
                 "cmdt_id": 280,
                 "cmdt_name": "Pear(Marasebu)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR280"
             },
             {
                 "cmdt_id": 146,
                 "cmdt_name": "Peas Wet",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR146"
             },
             {
                 "cmdt_id": 259,
                 "cmdt_name": "Peas cod",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR259"
             },
             {
                 "cmdt_id": 295,
                 "cmdt_name": "Peas(Dry)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR295"
             },
             {
                 "cmdt_id": 252,
                 "cmdt_name": "Pegeon Pea(Arhar Fali)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR252"
             },
             {
                 "cmdt_id": 93,
                 "cmdt_name": "Pepper garbled",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR93"
             },
             {
                 "cmdt_id": 94,
                 "cmdt_name": "Pepper ungarbled",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR94"
             },
             {
                 "cmdt_id": 418,
                 "cmdt_name": "Perandai",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR418"
             },
             {
                 "cmdt_id": 277,
                 "cmdt_name": "Persimon(Japani Fal)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR277"
             },
             {
                 "cmdt_id": 505,
                 "cmdt_name": "Phuee(Leafy Veg)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR505"
             },
             {
                 "cmdt_id": 179,
                 "cmdt_name": "Pigs",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR179"
             },
             {
                 "cmdt_id": 506,
                 "cmdt_name": "Pincushion Flower",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR506"
             },
             {
                 "cmdt_id": 507,
                 "cmdt_name": "Pine Nut(Chilgoza /Niyoza)",
-                "cmdt_group_id": 8
+                "cmdt_group_id": 8,
+                "uuiq": "VAAR507"
             },
             {
                 "cmdt_id": 21,
                 "cmdt_name": "Pineapple",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR21"
             },
             {
                 "cmdt_id": 508,
                 "cmdt_name": "Pista(Pistachio)",
-                "cmdt_group_id": 8
+                "cmdt_group_id": 8,
+                "uuiq": "VAAR508"
             },
             {
                 "cmdt_id": 279,
                 "cmdt_name": "Plum",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR279"
             },
             {
                 "cmdt_id": 254,
                 "cmdt_name": "Pointed gourd(Parval)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR254"
             },
             {
                 "cmdt_id": 509,
                 "cmdt_name": "Pokcha Leafy Veg",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR509"
             },
             {
                 "cmdt_id": 197,
                 "cmdt_name": "Polherb",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR197"
             },
             {
                 "cmdt_id": 160,
                 "cmdt_name": "Pomegranate",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR160"
             },
             {
                 "cmdt_id": 354,
                 "cmdt_name": "Poppy capsules",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR354"
             },
             {
                 "cmdt_id": 24,
                 "cmdt_name": "Potato",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR24"
             },
             {
                 "cmdt_id": 510,
                 "cmdt_name": "Prawn",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR510"
             },
             {
                 "cmdt_id": 511,
                 "cmdt_name": "Proso Millet",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR511"
             },
             {
                 "cmdt_id": 70,
                 "cmdt_name": "Pumpkin",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR70"
             },
             {
                 "cmdt_id": 210,
                 "cmdt_name": "Pundi",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR210"
             },
             {
                 "cmdt_id": 110,
                 "cmdt_name": "Pundi Seed",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR110"
             },
             {
                 "cmdt_id": 376,
                 "cmdt_name": "Pupadia",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR376"
             },
             {
                 "cmdt_id": 512,
                 "cmdt_name": "Purslane",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR512"
             },
             {
                 "cmdt_id": 513,
                 "cmdt_name": "Quince(Nakh)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR513"
             },
             {
                 "cmdt_id": 133,
                 "cmdt_name": "Raddish",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR133"
             },
             {
                 "cmdt_id": 30,
                 "cmdt_name": "Ragi(Finger Millet)",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR30"
             },
             {
                 "cmdt_id": 338,
                 "cmdt_name": "Raibel",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR338"
             },
             {
                 "cmdt_id": 205,
                 "cmdt_name": "Rajgir",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR205"
             },
             {
                 "cmdt_id": 446,
                 "cmdt_name": "Rala",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR446"
             },
             {
                 "cmdt_id": 235,
                 "cmdt_name": "Ram",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR235"
             },
             {
                 "cmdt_id": 514,
                 "cmdt_name": "Rambutan",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR514"
             },
             {
                 "cmdt_id": 447,
                 "cmdt_name": "Ramphal",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR447"
             },
             {
                 "cmdt_id": 258,
                 "cmdt_name": "Rat Tail Radish(Mogari)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR258"
             },
             {
                 "cmdt_id": 389,
                 "cmdt_name": "Ratanjot",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR389"
             },
             {
                 "cmdt_id": 515,
                 "cmdt_name": "Raw Biomass(Agro Residue)",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR515"
             },
             {
                 "cmdt_id": 54,
                 "cmdt_name": "Raya",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR54"
             },
             {
                 "cmdt_id": 448,
                 "cmdt_name": "Rayee",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR448"
             },
             {
                 "cmdt_id": 422,
                 "cmdt_name": "Red Cabbage",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR422"
             },
             {
                 "cmdt_id": 516,
                 "cmdt_name": "Red Gourd",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR516"
             },
             {
                 "cmdt_id": 7,
                 "cmdt_name": "Red Gram",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR7"
             },
             {
                 "cmdt_id": 272,
                 "cmdt_name": "Resinwood",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR272"
             },
             {
                 "cmdt_id": 517,
                 "cmdt_name": "Ribbed Celery",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR517"
             },
             {
                 "cmdt_id": 51,
                 "cmdt_name": "Riccbcan",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR51"
             },
             {
                 "cmdt_id": 3,
                 "cmdt_name": "Rice",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR3"
             },
             {
                 "cmdt_id": 518,
                 "cmdt_name": "Rice Bean",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR518"
             },
             {
                 "cmdt_id": 519,
                 "cmdt_name": "Ridge Gourd(Permal/Hybrid Gourd)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR519"
             },
             {
                 "cmdt_id": 132,
                 "cmdt_name": "Ridgeguard(Tori)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR132"
             },
             {
                 "cmdt_id": 321,
                 "cmdt_name": "Rose(Local)",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR321"
             },
             {
                 "cmdt_id": 186,
                 "cmdt_name": "Rose(Loose))",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR186"
             },
             {
                 "cmdt_id": 320,
                 "cmdt_name": "Rose(Tata)",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR320"
             },
             {
                 "cmdt_id": 520,
                 "cmdt_name": "Round Chilli",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR520"
             },
             {
                 "cmdt_id": 257,
                 "cmdt_name": "Round gourd",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR257"
             },
             {
                 "cmdt_id": 95,
                 "cmdt_name": "Rubber",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR95"
             },
             {
                 "cmdt_id": 243,
                 "cmdt_name": "Sabu Dan",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR243"
             },
             {
                 "cmdt_id": 48,
                 "cmdt_name": "Safflower",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR48"
             },
             {
                 "cmdt_id": 286,
                 "cmdt_name": "Saffron",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR286"
             },
             {
                 "cmdt_id": 225,
                 "cmdt_name": "Sajje",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR225"
             },
             {
                 "cmdt_id": 521,
                 "cmdt_name": "Sal Seeds",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR521"
             },
             {
                 "cmdt_id": 522,
                 "cmdt_name": "Salix-Pursi(Willow)",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR522"
             },
             {
                 "cmdt_id": 105,
                 "cmdt_name": "Same/Savi",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR105"
             },
             {
                 "cmdt_id": 379,
                 "cmdt_name": "Sandalwood",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR379"
             },
             {
                 "cmdt_id": 204,
                 "cmdt_name": "Sarasum",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR204"
             },
             {
                 "cmdt_id": 230,
                 "cmdt_name": "Season Leaves",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR230"
             },
             {
                 "cmdt_id": 209,
                 "cmdt_name": "Seegu",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR209"
             },
             {
                 "cmdt_id": 148,
                 "cmdt_name": "Seemebadnekai",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR148"
             },
             {
                 "cmdt_id": 162,
                 "cmdt_name": "Seetapal",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR162"
             },
             {
                 "cmdt_id": 523,
                 "cmdt_name": "Sem",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR523"
             },
             {
                 "cmdt_id": 11,
                 "cmdt_name": "Sesamum(Sesame,Gingelly,Til)",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR11"
             },
             {
                 "cmdt_id": 176,
                 "cmdt_name": "She Buffalo",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR176"
             },
             {
                 "cmdt_id": 236,
                 "cmdt_name": "She Goat",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR236"
             },
             {
                 "cmdt_id": 177,
                 "cmdt_name": "Sheep",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR177"
             },
             {
                 "cmdt_id": 524,
                 "cmdt_name": "Shrimp",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR524"
             },
             {
                 "cmdt_id": 154,
                 "cmdt_name": "Siddota",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR154"
             },
             {
                 "cmdt_id": 525,
                 "cmdt_name": "Silk Cocoon",
-                "cmdt_group_id": 13
+                "cmdt_group_id": 13,
+                "uuiq": "VAAR525"
             },
             {
                 "cmdt_id": 419,
                 "cmdt_name": "Siru Kizhagu",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR419"
             },
             {
                 "cmdt_id": 185,
                 "cmdt_name": "Skin And Hide",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR185"
             },
             {
                 "cmdt_id": 128,
                 "cmdt_name": "Snakeguard",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR128"
             },
             {
                 "cmdt_id": 526,
                 "cmdt_name": "Snow Mountain Garlic",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR526"
             },
             {
                 "cmdt_id": 114,
                 "cmdt_name": "Soanf",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR114"
             },
             {
                 "cmdt_id": 167,
                 "cmdt_name": "Soapnut(Antawala/Retha)",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR167"
             },
             {
                 "cmdt_id": 449,
                 "cmdt_name": "Soha",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR449"
             },
             {
                 "cmdt_id": 239,
                 "cmdt_name": "Soji",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR239"
             },
             {
                 "cmdt_id": 203,
                 "cmdt_name": "Sompu",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR203"
             },
             {
                 "cmdt_id": 527,
                 "cmdt_name": "Soursop",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR527"
             },
             {
                 "cmdt_id": 13,
                 "cmdt_name": "Soyabean",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR13"
             },
             {
                 "cmdt_id": 290,
                 "cmdt_name": "Spinach",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR290"
             },
             {
                 "cmdt_id": 262,
                 "cmdt_name": "Sponge gourd",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR262"
             },
             {
                 "cmdt_id": 282,
                 "cmdt_name": "Squash(Chappal Kadoo)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR282"
             },
             {
                 "cmdt_id": 528,
                 "cmdt_name": "Star Fruit(Kamraikh)",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR528"
             },
             {
                 "cmdt_id": 529,
                 "cmdt_name": "Strawberry",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR529"
             },
             {
                 "cmdt_id": 44,
                 "cmdt_name": "Sugar",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR44"
             },
             {
                 "cmdt_id": 530,
                 "cmdt_name": "Sugar Snap Peas",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR530"
             },
             {
                 "cmdt_id": 122,
                 "cmdt_name": "Sugarcane",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR122"
             },
             {
                 "cmdt_id": 417,
                 "cmdt_name": "Sundaikai",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR417"
             },
             {
                 "cmdt_id": 14,
                 "cmdt_name": "Sunflower",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR14"
             },
             {
                 "cmdt_id": 238,
                 "cmdt_name": "Sunflower Seed",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR238"
             },
             {
                 "cmdt_id": 117,
                 "cmdt_name": "Sunhemp",
-                "cmdt_group_id": 4
+                "cmdt_group_id": 4,
+                "uuiq": "VAAR117"
             },
             {
                 "cmdt_id": 199,
                 "cmdt_name": "Suram",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR199"
             },
             {
                 "cmdt_id": 251,
                 "cmdt_name": "Surat Beans(Papadi)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR251"
             },
             {
                 "cmdt_id": 211,
                 "cmdt_name": "Suva(Dill Seed)",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR211"
             },
             {
                 "cmdt_id": 150,
                 "cmdt_name": "Suvarna Gadde",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR150"
             },
             {
                 "cmdt_id": 531,
                 "cmdt_name": "Swan Phali(Flat Bean)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR531"
             },
             {
                 "cmdt_id": 532,
                 "cmdt_name": "Swan Plant (Green Herb)",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR532"
             },
             {
                 "cmdt_id": 533,
                 "cmdt_name": "Swanflower",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR533"
             },
             {
                 "cmdt_id": 534,
                 "cmdt_name": "Sweet Corn ",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR534"
             },
             {
                 "cmdt_id": 124,
                 "cmdt_name": "Sweet Potato",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR124"
             },
             {
                 "cmdt_id": 145,
                 "cmdt_name": "Sweet Pumpkin",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR145"
             },
             {
                 "cmdt_id": 535,
                 "cmdt_name": "Sweet Saag",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR535"
             },
             {
                 "cmdt_id": 395,
                 "cmdt_name": "Sweet Sultan",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR395"
             },
             {
                 "cmdt_id": 103,
                 "cmdt_name": "T.V. Cumbu",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR103"
             },
             {
                 "cmdt_id": 215,
                 "cmdt_name": "Tamarind Fruit",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR215"
             },
             {
                 "cmdt_id": 168,
                 "cmdt_name": "Tamarind Seed",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR168"
             },
             {
                 "cmdt_id": 85,
                 "cmdt_name": "Tapioca",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR85"
             },
             {
                 "cmdt_id": 63,
                 "cmdt_name": "Taramira",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR63"
             },
             {
                 "cmdt_id": 537,
                 "cmdt_name": "Taro (Arvi) Leaves",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR537"
             },
             {
                 "cmdt_id": 538,
                 "cmdt_name": "Taro (Arvi) Stem",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR538"
             },
             {
                 "cmdt_id": 40,
                 "cmdt_name": "Tea",
-                "cmdt_group_id": 9
+                "cmdt_group_id": 9,
+                "uuiq": "VAAR40"
             },
             {
                 "cmdt_id": 161,
                 "cmdt_name": "Tender Coconut",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR161"
             },
             {
                 "cmdt_id": 539,
                 "cmdt_name": "Tevada",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR539"
             },
             {
                 "cmdt_id": 100,
                 "cmdt_name": "Thinai(Italian Millet)",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR100"
             },
             {
                 "cmdt_id": 142,
                 "cmdt_name": "Thogrikai",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR142"
             },
             {
                 "cmdt_id": 134,
                 "cmdt_name": "Thondekai",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR134"
             },
             {
                 "cmdt_id": 297,
                 "cmdt_name": "Tinda",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR297"
             },
             {
                 "cmdt_id": 119,
                 "cmdt_name": "Tobacco",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR119"
             },
             {
                 "cmdt_id": 65,
                 "cmdt_name": "Tomato",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR65"
             },
             {
                 "cmdt_id": 273,
                 "cmdt_name": "Torchwood",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR273"
             },
             {
                 "cmdt_id": 55,
                 "cmdt_name": "Toria",
-                "cmdt_group_id": 3
+                "cmdt_group_id": 3,
+                "uuiq": "VAAR55"
             },
             {
                 "cmdt_id": 192,
                 "cmdt_name": "Tube Flower",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR192"
             },
             {
                 "cmdt_id": 330,
                 "cmdt_name": "Tube Rose(Double)",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR330"
             },
             {
                 "cmdt_id": 337,
                 "cmdt_name": "Tube Rose(Loose)",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR337"
             },
             {
                 "cmdt_id": 324,
                 "cmdt_name": "Tube Rose(Single)",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR324"
             },
             {
                 "cmdt_id": 432,
                 "cmdt_name": "Tulasi",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR432"
             },
             {
                 "cmdt_id": 35,
                 "cmdt_name": "Turmeric",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR35"
             },
             {
                 "cmdt_id": 260,
                 "cmdt_name": "Turmeric(raw)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR260"
             },
             {
                 "cmdt_id": 289,
                 "cmdt_name": "Turnip",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR289"
             },
             {
                 "cmdt_id": 366,
                 "cmdt_name": "Vatsanabha",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR366"
             },
             {
                 "cmdt_id": 291,
                 "cmdt_name": "Walnut",
-                "cmdt_group_id": 8
+                "cmdt_group_id": 8,
+                "uuiq": "VAAR291"
             },
             {
                 "cmdt_id": 425,
                 "cmdt_name": "Water Apple",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR425"
             },
             {
                 "cmdt_id": 60,
                 "cmdt_name": "Water Melon",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR60"
             },
             {
                 "cmdt_id": 540,
                 "cmdt_name": "Water Plant(Kaseru)",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR540"
             },
             {
                 "cmdt_id": 450,
                 "cmdt_name": "Water chestnut",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR450"
             },
             {
                 "cmdt_id": 451,
                 "cmdt_name": "Wax",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR451"
             },
             {
                 "cmdt_id": 1,
                 "cmdt_name": "Wheat",
-                "cmdt_group_id": 1
+                "cmdt_group_id": 1,
+                "uuiq": "VAAR1"
             },
             {
                 "cmdt_id": 240,
                 "cmdt_name": "Wheat Atta",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR240"
             },
             {
                 "cmdt_id": 358,
                 "cmdt_name": "White Muesli",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR358"
             },
             {
                 "cmdt_id": 341,
                 "cmdt_name": "White Peas",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR341"
             },
             {
                 "cmdt_id": 130,
                 "cmdt_name": "White Pumpkin",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR130"
             },
             {
                 "cmdt_id": 541,
                 "cmdt_name": "Wild Bean / Pod",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR541"
             },
             {
                 "cmdt_id": 542,
                 "cmdt_name": "Wild Cucumber",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR542"
             },
             {
                 "cmdt_id": 543,
                 "cmdt_name": "Wild Garlic / Shoots",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR543"
             },
             {
                 "cmdt_id": 544,
                 "cmdt_name": "Wild Melon",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR544"
             },
             {
                 "cmdt_id": 545,
                 "cmdt_name": "Wild Spinach",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR545"
             },
             {
                 "cmdt_id": 427,
                 "cmdt_name": "Wild lemon",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR427"
             },
             {
                 "cmdt_id": 163,
                 "cmdt_name": "Wood",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR163"
             },
             {
                 "cmdt_id": 428,
                 "cmdt_name": "Wood Apple",
-                "cmdt_group_id": 5
+                "cmdt_group_id": 5,
+                "uuiq": "VAAR428"
             },
             {
                 "cmdt_id": 296,
                 "cmdt_name": "Wool",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR296"
             },
             {
                 "cmdt_id": 201,
                 "cmdt_name": "Yam",
-                "cmdt_group_id": 10
+                "cmdt_group_id": 10,
+                "uuiq": "VAAR201"
             },
             {
                 "cmdt_id": 546,
                 "cmdt_name": "Yam Bean / Mexican Turnip(Bankla)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR546"
             },
             {
                 "cmdt_id": 248,
                 "cmdt_name": "Yam(Ratalu)",
-                "cmdt_group_id": 6
+                "cmdt_group_id": 6,
+                "uuiq": "VAAR248"
             },
             {
                 "cmdt_id": 411,
                 "cmdt_name": "balsam",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR411"
             },
             {
                 "cmdt_id": 364,
                 "cmdt_name": "basil",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR364"
             },
             {
                 "cmdt_id": 345,
                 "cmdt_name": "buttery",
-                "cmdt_group_id": 2
+                "cmdt_group_id": 2,
+                "uuiq": "VAAR345"
             },
             {
                 "cmdt_id": 396,
                 "cmdt_name": "cineraria",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR396"
             },
             {
                 "cmdt_id": 371,
                 "cmdt_name": "dhawai flowers",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR371"
             },
             {
                 "cmdt_id": 405,
                 "cmdt_name": "dianthus",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR405"
             },
             {
                 "cmdt_id": 352,
                 "cmdt_name": "dried mango",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR352"
             },
             {
                 "cmdt_id": 404,
                 "cmdt_name": "golden rod",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR404"
             },
             {
                 "cmdt_id": 390,
                 "cmdt_name": "gulli",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR390"
             },
             {
                 "cmdt_id": 398,
                 "cmdt_name": "gypsophila",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR398"
             },
             {
                 "cmdt_id": 402,
                 "cmdt_name": "hydrangea",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR402"
             },
             {
                 "cmdt_id": 430,
                 "cmdt_name": "kakatan",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR430"
             },
             {
                 "cmdt_id": 368,
                 "cmdt_name": "karanja seeds",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR368"
             },
             {
                 "cmdt_id": 387,
                 "cmdt_name": "kokum",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR387"
             },
             {
                 "cmdt_id": 355,
                 "cmdt_name": "kutki",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR355"
             },
             {
                 "cmdt_id": 361,
                 "cmdt_name": "liquor turmeric",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR361"
             },
             {
                 "cmdt_id": 356,
                 "cmdt_name": "macoy",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR356"
             },
             {
                 "cmdt_id": 351,
                 "cmdt_name": "mango powder",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR351"
             },
             {
                 "cmdt_id": 353,
                 "cmdt_name": "nigella",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR353"
             },
             {
                 "cmdt_id": 374,
                 "cmdt_name": "nigella seeds",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR374"
             },
             {
                 "cmdt_id": 360,
                 "cmdt_name": "pippali",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR360"
             },
             {
                 "cmdt_id": 350,
                 "cmdt_name": "poppy seeds",
-                "cmdt_group_id": 7
+                "cmdt_group_id": 7,
+                "uuiq": "VAAR350"
             },
             {
                 "cmdt_id": 397,
                 "cmdt_name": "salvia",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR397"
             },
             {
                 "cmdt_id": 362,
                 "cmdt_name": "sanay",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR362"
             },
             {
                 "cmdt_id": 393,
                 "cmdt_name": "sevanti",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR393"
             },
             {
                 "cmdt_id": 384,
                 "cmdt_name": "spikenard",
-                "cmdt_group_id": 12
+                "cmdt_group_id": 12,
+                "uuiq": "VAAR384"
             },
             {
                 "cmdt_id": 369,
                 "cmdt_name": "stevia",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR369"
             },
             {
                 "cmdt_id": 359,
                 "cmdt_name": "stone pulverizer",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR359"
             },
             {
                 "cmdt_id": 406,
                 "cmdt_name": "sweet william",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR406"
             },
             {
                 "cmdt_id": 392,
                 "cmdt_name": "tulip",
-                "cmdt_group_id": 14
+                "cmdt_group_id": 14,
+                "uuiq": "VAAR392"
             },
             {
                 "cmdt_id": 365,
                 "cmdt_name": "vadang",
-                "cmdt_group_id": 11
+                "cmdt_group_id": 11,
+                "uuiq": "VAAR365"
             }
         ],
         "note_data": [
