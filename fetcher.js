@@ -79,21 +79,23 @@ async function runDailyFetch(dateOverride) {
                             const maxPrice = record.max_price ? parseFloat(record.max_price.replace(/,/g, '')) : 0;
                             const modelPrice = record.model_price ? parseFloat(record.model_price.replace(/,/g, '')) : 0;
 
+                            const recordUuiq = require('crypto').randomUUID();
+
                             await client.query(
                                 `INSERT INTO agmark_sales_data (
                                     report_date, commodity_id, 
                                     cmdt_name, cmdt_grp_name, market_name, district_name, state_name,
                                     grade_name, variety_name, unit_name_price,
                                     min_price, max_price, model_price, arrival_date,
-                                    commodity_uuiq
-                                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)
+                                    commodity_uuiq, record_uuiq
+                                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16)
                                 ON CONFLICT (report_date, commodity_id, market_name, variety_name, grade_name) DO NOTHING`,
                                 [
                                     date, item.cmdt_id,
                                     record.cmdt_name, record.cmdt_grp_name, record.market_name, record.district_name, record.state_name,
                                     record.grade_name, record.variety_name, record.unit_name_price,
                                     minPrice, maxPrice, modelPrice, record.arrival_date,
-                                    item.uuiq
+                                    item.uuiq, recordUuiq
                                 ]
                             );
                         } catch (err) {

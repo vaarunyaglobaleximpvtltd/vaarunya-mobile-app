@@ -56,30 +56,9 @@ async function runEnamFetch(dateOverride) {
         return;
     }
 
-    const nameToUuiq = {};
-    const cleanNameToUuiq = {};
-    metadata.data.cmdt_data.forEach(c => {
-        const lower = c.cmdt_name.toLowerCase();
-        nameToUuiq[lower] = c.uuiq;
-        cleanNameToUuiq[lower.replace(/\s+/g, '')] = c.uuiq;
-    });
-
-    function getUuiq(name) {
-        if (!name) return null;
-        const lower = name.toLowerCase().trim();
-        if (nameToUuiq[lower]) return nameToUuiq[lower];
-        const noSpace = lower.replace(/\s+/g, '');
-        if (cleanNameToUuiq[noSpace]) return cleanNameToUuiq[noSpace];
-        const cleanSuffix = lower.split('(')[0].split('-')[0].trim();
-        if (nameToUuiq[cleanSuffix]) return nameToUuiq[cleanSuffix];
-        const cleanSuffixNoSpace = cleanSuffix.replace(/\s+/g, '');
-        if (cleanNameToUuiq[cleanSuffixNoSpace]) return cleanNameToUuiq[cleanSuffixNoSpace];
-        return null;
-    }
-
     const client = await pool.connect();
     try {
-        console.log("Saving eNAM data to database...");
+        console.log("Saving raw eNAM data to database...");
 
         // Optional: Clear existing data for this date to support re-runs
         await client.query('DELETE FROM enam_sales_data WHERE report_date = $1', [date]);
@@ -93,20 +72,10 @@ async function runEnamFetch(dateOverride) {
                 const arrivals = parseFloat(record.commodity_arrivals) || 0;
                 const traded = parseFloat(record.commodity_traded) || 0;
 
-                // Normalize Unit
-                let unitNamePrice = record.Commodity_Uom || '';
-                const uomLower = unitNamePrice.toLowerCase();
-                if (uomLower.includes('qui') || uomLower.includes('quintal')) {
-                    unitNamePrice = 'Rs./Quintal';
-                } else if (uomLower.includes('nos') || uomLower.includes('number')) {
-                    unitNamePrice = 'Rs./Unit';
-                } else if (uomLower.includes('kg')) {
-                    // e.g. "50 Kg" -> keep as is or map to Rs./Kg? 
-                    // Using Agmark style "Rs./..."
-                    unitNamePrice = `Rs./${unitNamePrice}`;
-                }
-
-                const uuiq = getUuiq(record.commodity);
+                // RAW Dump: No normalization, no priority, no UUID mapping here.
+                const rawUnit = record.Commodity_Uom || '';
+                const commodityName = record.commodity;
+                const recordUuiq = require('crypto').randomUUID();
 
                 await client.query(`
                     INSERT INTO enam_sales_data (
@@ -114,20 +83,21 @@ async function runEnamFetch(dateOverride) {
                         min_price, modal_price, max_price,
                         commodity_arrivals, commodity_traded, created_at_api,
                         status, unit_name_price, report_date,
-                        commodity_uuiq
-                    ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
+                        commodity_uuiq, record_uuiq
+                    ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)
                     ON CONFLICT (report_date, enam_id, apmc_name, commodity_name) 
                     DO UPDATE SET
                         unit_name_price = EXCLUDED.unit_name_price,
                         min_price = EXCLUDED.min_price,
                         max_price = EXCLUDED.max_price,
                         modal_price = EXCLUDED.modal_price,
-                        commodity_uuiq = EXCLUDED.commodity_uuiq
+                        commodity_uuiq = EXCLUDED.commodity_uuiq,
+                        record_uuiq = EXCLUDED.record_uuiq
                 `, [
                     record.id,
                     record.state,
                     record.apmc,
-                    record.commodity,
+                    commodityName,
                     minPrice,
                     modalPrice,
                     maxPrice,
@@ -135,9 +105,10 @@ async function runEnamFetch(dateOverride) {
                     traded,
                     record.created_at, // API date field
                     record.status,
-                    unitNamePrice,
+                    rawUnit,
                     date, // Our report date
-                    uuiq
+                    null, // UUID will be filled by normalizer
+                    recordUuiq
                 ]);
             } catch (e) {
                 console.error(`Error processing eNAM record ${record.id}:`, e.message);
