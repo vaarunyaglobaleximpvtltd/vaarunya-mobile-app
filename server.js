@@ -127,11 +127,7 @@ app.get('/api/prices', async (req, res) => {
                 e.commodity_traded
             FROM market_prices_common p
             LEFT JOIN enam_sales_data e 
-                ON p.source = 'eNAM' 
-                AND p.report_date = e.report_date 
-                AND p.state_name = e.state_name 
-                AND p.market_name = e.apmc_name 
-                AND p.commodity_name = e.commodity_name
+                ON p.record_uuiq = e.record_uuiq 
             WHERE p.report_date BETWEEN $1 AND $2 AND LOWER(p.commodity_name) = ANY($3)
         `;
 
