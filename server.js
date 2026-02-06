@@ -265,14 +265,27 @@ app.get('/api/prices/download', async (req, res) => {
 
     const client = await pool.connect();
     try {
+        const metadata = await fs.readJson(DATA_PATH);
+        const commodities = metadata.data?.cmdt_data || [];
+        const groups = metadata.data?.cmdt_group_data || [];
+
+        const groupMap = {};
+        groups.forEach(g => { groupMap[g.id] = g.cmdt_grp_name; });
+
+        const commodityToGroupMap = {};
+        commodities.forEach(c => {
+            commodityToGroupMap[c.cmdt_name.toLowerCase()] = groupMap[c.cmdt_group_id] || 'Other';
+        });
+
         const query = `
             SELECT 
                 commodity_name, 
                 commodity_uuiq as uuiq, 
+                unit,
                 AVG(model_price) as avg_price
             FROM market_prices_common
             WHERE report_date = $1
-            GROUP BY commodity_name, commodity_uuiq
+            GROUP BY commodity_name, commodity_uuiq, unit
             ORDER BY commodity_name ASC
         `;
 
@@ -284,16 +297,18 @@ app.get('/api/prices/download', async (req, res) => {
         const type = 'per_item';
 
         // CSV Header
-        let csvContent = "PriceList Name,Type,Item Name,SKU,PriceList Rate,Currency Code\n";
+        let csvContent = "PriceList Name,Type,Commodity Group,Item Name,SKU,Unit,PriceList Rate,Currency Code\n";
 
         for (const row of result.rows) {
             const itemName = row.commodity_name.replace(/"/g, '""'); // Escape double quotes
             const sku = row.uuiq || `VAAR_UNMAPPED`;
+            const unit = row.unit || 'Unit';
+            const groupName = commodityToGroupMap[row.commodity_name.toLowerCase()] || 'Other';
             const avgPrice = parseFloat(row.avg_price) || 0;
             const vaarunyaPrice = Math.round(avgPrice * 1.15);
 
             // Quote values to handle commas in names
-            csvContent += `"${priceListName}","${type}","${itemName}","${sku}",${vaarunyaPrice},"${currencyCode}"\n`;
+            csvContent += `"${priceListName}","${type}","${groupName}","${itemName}","${sku}","${unit}",${vaarunyaPrice},"${currencyCode}"\n`;
         }
 
         res.setHeader('Content-Type', 'text/csv');

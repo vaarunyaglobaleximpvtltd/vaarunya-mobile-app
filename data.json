@@ -3908,6 +3908,12 @@
                 "cmdt_name": "PADDY IR 36",
                 "cmdt_group_id": 99,
                 "uuiq": "VAAR654"
+            },
+            {
+                "cmdt_id": 655,
+                "cmdt_name": "RAJMA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR655"
             }
         ],
         "note_data": [
