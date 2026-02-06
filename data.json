@@ -3914,6 +3914,378 @@
                 "cmdt_name": "RAJMA",
                 "cmdt_group_id": 99,
                 "uuiq": "VAAR655"
+            },
+            {
+                "cmdt_id": 656,
+                "cmdt_name": "GROUND NUT K6",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR656"
+            },
+            {
+                "cmdt_id": 657,
+                "cmdt_name": "HORSE GRAM WHITE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR657"
+            },
+            {
+                "cmdt_id": 658,
+                "cmdt_name": "RED CHILLI-MOISTURED",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR658"
+            },
+            {
+                "cmdt_id": 659,
+                "cmdt_name": "PADDY RNR",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR659"
+            },
+            {
+                "cmdt_id": 660,
+                "cmdt_name": "PADDY COMMON JAYA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR660"
+            },
+            {
+                "cmdt_id": 661,
+                "cmdt_name": "CHANA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR661"
+            },
+            {
+                "cmdt_id": 662,
+                "cmdt_name": "CHANA (BENGAL GRAM)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR662"
+            },
+            {
+                "cmdt_id": 663,
+                "cmdt_name": "CHANA (BENGAL GRAM)-DESI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR663"
+            },
+            {
+                "cmdt_id": 664,
+                "cmdt_name": "CHANA-LOCAL",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR664"
+            },
+            {
+                "cmdt_id": 665,
+                "cmdt_name": "PADDY HMT OLD",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR665"
+            },
+            {
+                "cmdt_id": 666,
+                "cmdt_name": "TAMARIND SEED LOCAL",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR666"
+            },
+            {
+                "cmdt_id": 667,
+                "cmdt_name": "GINGILY (SESAME SEEDS) - RED",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR667"
+            },
+            {
+                "cmdt_id": 668,
+                "cmdt_name": "GINGILY (SESAME SEED)- WHITE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR668"
+            },
+            {
+                "cmdt_id": 669,
+                "cmdt_name": "CHILLI-5",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR669"
+            },
+            {
+                "cmdt_id": 670,
+                "cmdt_name": "CHILLI-341 A/C",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR670"
+            },
+            {
+                "cmdt_id": 671,
+                "cmdt_name": "CHILLI-BADIGI A/C",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR671"
+            },
+            {
+                "cmdt_id": 672,
+                "cmdt_name": "CHILLI-4884",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR672"
+            },
+            {
+                "cmdt_id": 673,
+                "cmdt_name": "CHILLI-SUPER10",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR673"
+            },
+            {
+                "cmdt_id": 674,
+                "cmdt_name": "CHILLI-334 A/C",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR674"
+            },
+            {
+                "cmdt_id": 675,
+                "cmdt_name": "CHILLI -SHARK 1",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR675"
+            },
+            {
+                "cmdt_id": 676,
+                "cmdt_name": "CHILLI- ARMOUR",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR676"
+            },
+            {
+                "cmdt_id": 677,
+                "cmdt_name": "CHILLI-273 A/C",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR677"
+            },
+            {
+                "cmdt_id": 678,
+                "cmdt_name": "CHILLI-SUPER10 A/C",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR678"
+            },
+            {
+                "cmdt_id": 679,
+                "cmdt_name": "CHILLI-DESI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR679"
+            },
+            {
+                "cmdt_id": 680,
+                "cmdt_name": "CHILLI-DEVANURU DELUX A/C",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR680"
+            },
+            {
+                "cmdt_id": 681,
+                "cmdt_name": "CHILLI-341",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR681"
+            },
+            {
+                "cmdt_id": 682,
+                "cmdt_name": "CHILLI-5 A/C",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR682"
+            },
+            {
+                "cmdt_id": 683,
+                "cmdt_name": "CHILLI-334",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR683"
+            },
+            {
+                "cmdt_id": 684,
+                "cmdt_name": "CHILLI-TEJA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR684"
+            },
+            {
+                "cmdt_id": 685,
+                "cmdt_name": "CHILLI-273",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR685"
+            },
+            {
+                "cmdt_id": 686,
+                "cmdt_name": "CHILLI-4884 A/C",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR686"
+            },
+            {
+                "cmdt_id": 687,
+                "cmdt_name": "CHILLI-TALU A/C",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR687"
+            },
+            {
+                "cmdt_id": 688,
+                "cmdt_name": "CHILLI-BADIGI 355",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR688"
+            },
+            {
+                "cmdt_id": 689,
+                "cmdt_name": "CHILLI-DEVANURU DELUX",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR689"
+            },
+            {
+                "cmdt_id": 690,
+                "cmdt_name": "REDGRAM-OLD",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR690"
+            },
+            {
+                "cmdt_id": 691,
+                "cmdt_name": "REDGRAM-BLACK",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR691"
+            },
+            {
+                "cmdt_id": 692,
+                "cmdt_name": "REDGRAM-WHITE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR692"
+            },
+            {
+                "cmdt_id": 693,
+                "cmdt_name": "HORSEGRAM - BLACK",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR693"
+            },
+            {
+                "cmdt_id": 694,
+                "cmdt_name": "HORSEGRAM",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR694"
+            },
+            {
+                "cmdt_id": 695,
+                "cmdt_name": "RIDGE GOURD (TURAI)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR695"
+            },
+            {
+                "cmdt_id": 696,
+                "cmdt_name": "FENUGREEK (HARI METHI)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR696"
+            },
+            {
+                "cmdt_id": 697,
+                "cmdt_name": "TUR/ARHAR-MIXED",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR697"
+            },
+            {
+                "cmdt_id": 698,
+                "cmdt_name": "TUR/ARHAR-WHITE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR698"
+            },
+            {
+                "cmdt_id": 699,
+                "cmdt_name": "TUR/ARHAR-PEGION PIE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR699"
+            },
+            {
+                "cmdt_id": 700,
+                "cmdt_name": "URAD-RED",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR700"
+            },
+            {
+                "cmdt_id": 701,
+                "cmdt_name": "URAD-GREEN",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR701"
+            },
+            {
+                "cmdt_id": 702,
+                "cmdt_name": "LOBIA LOCAL",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR702"
+            },
+            {
+                "cmdt_id": 703,
+                "cmdt_name": "LOBIA PODS",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR703"
+            },
+            {
+                "cmdt_id": 704,
+                "cmdt_name": "LOBIA HYBRID",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR704"
+            },
+            {
+                "cmdt_id": 705,
+                "cmdt_name": "TURMERIC ATTU",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR705"
+            },
+            {
+                "cmdt_id": 706,
+                "cmdt_name": "PADDY BPT",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR706"
+            },
+            {
+                "cmdt_id": 707,
+                "cmdt_name": "PERSIMON",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR707"
+            },
+            {
+                "cmdt_id": 708,
+                "cmdt_name": "PADDY ADT-39(TN)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR708"
+            },
+            {
+                "cmdt_id": 709,
+                "cmdt_name": "MACE WHOLE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR709"
+            },
+            {
+                "cmdt_id": 710,
+                "cmdt_name": "AJWAIN",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR710"
+            },
+            {
+                "cmdt_id": 711,
+                "cmdt_name": "DRY FISH (MINNOW)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR711"
+            },
+            {
+                "cmdt_id": 712,
+                "cmdt_name": "COWPEA BLACK",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR712"
+            },
+            {
+                "cmdt_id": 713,
+                "cmdt_name": "COWPEA WHITE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR713"
+            },
+            {
+                "cmdt_id": 714,
+                "cmdt_name": "COWPEA RED",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR714"
+            },
+            {
+                "cmdt_id": 715,
+                "cmdt_name": "PADDY CO 51",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR715"
+            },
+            {
+                "cmdt_id": 716,
+                "cmdt_name": "CORIANDER",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR716"
+            },
+            {
+                "cmdt_id": 717,
+                "cmdt_name": "WHITE-GINGELY",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR717"
             }
         ],
         "note_data": [

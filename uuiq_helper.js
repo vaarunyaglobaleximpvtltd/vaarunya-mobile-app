@@ -26,10 +26,12 @@ async function getOrGenerateUuiq(commodityName) {
     found = commodities.find(c => c.cmdt_name.toLowerCase().replace(/\s+/g, '') === cleanName);
     if (found) return found.uuiq;
 
-    // 3. Partial Match (e.g. Suffixes or Prefixes)
-    const cleanSuffix = lowerName.split('(')[0].split('-')[0].trim();
-    found = commodities.find(c => c.cmdt_name.toLowerCase().startsWith(cleanSuffix) || cleanSuffix.startsWith(c.cmdt_name.toLowerCase()));
-    if (found) return found.uuiq;
+    // 3. Partial Match - REMOVED due to collisions (e.g. Ajwain vs Ajwain Husk)
+    // We strictly rely on Exact Match or Clean Match (ignoring spaces).
+    // If it's a new variation, we will generate a new UUID.
+
+    // Check if we have a manual override or specificknown alias if needed in future
+    // For now, fall through to generating new UUID if strict match fails.
 
     // 4. Generate New UUID
     console.log(`[uuiq_helper] Generating new UUID for: ${commodityName}`);
