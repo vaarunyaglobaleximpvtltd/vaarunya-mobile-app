@@ -23,6 +23,18 @@ async function initDB() {
     try {
         console.log("Initializing database...");
 
+        // 0. Users Table
+        await client.query(`
+            CREATE TABLE IF NOT EXISTS users (
+                id SERIAL PRIMARY KEY,
+                google_id TEXT UNIQUE NOT NULL,
+                email TEXT UNIQUE NOT NULL,
+                name TEXT,
+                picture TEXT,
+                created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+            );
+        `);
+
         // 1. Agmark Sales Data (Raw)
         await client.query(`
             CREATE TABLE IF NOT EXISTS agmark_sales_data (

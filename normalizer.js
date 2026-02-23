@@ -90,6 +90,28 @@ async function runNormalization(dateOverride) {
             const stdUnit = getStandardUnit(winningRawUnit);
 
             for (const row of winningRecords) {
+                let finalMin = parseFloat(row.min_price) || 0;
+                let finalMax = parseFloat(row.max_price) || 0;
+                let finalModel = (row._src === 'AGMARK' ? parseFloat(row.model_price) : parseFloat(row.modal_price)) || 0;
+                let finalUnit = stdUnit;
+
+                // Unit Conversion Logic
+                const lowerRawUnit = (row._unit || '').toLowerCase().replace(/\s/g, '');
+
+                if (lowerRawUnit.includes('50')) {
+                    // Convert 50kg -> Quintal (x2)
+                    finalMin *= 2;
+                    finalMax *= 2;
+                    finalModel *= 2;
+                    finalUnit = 'Rs./Quintal';
+                } else if (lowerRawUnit === 'kg' || lowerRawUnit === '1kg' || lowerRawUnit === 'perkg') {
+                    // Convert Kg -> Quintal (x100)
+                    finalMin *= 100;
+                    finalMax *= 100;
+                    finalModel *= 100;
+                    finalUnit = 'Rs./Quintal';
+                }
+
                 if (row._src === 'AGMARK') {
                     await client.query(`
                         INSERT INTO market_prices_common (
@@ -101,7 +123,7 @@ async function runNormalization(dateOverride) {
                             commodity_uuiq = EXCLUDED.commodity_uuiq,
                             min_price = EXCLUDED.min_price, max_price = EXCLUDED.max_price, model_price = EXCLUDED.model_price,
                             unit = EXCLUDED.unit, record_uuiq = EXCLUDED.record_uuiq
-                    `, [toTitleCase(row.state_name), toTitleCase(row.district_name), toTitleCase(row.market_name), row._name, uuiq, row.min_price, row.max_price, row.model_price, stdUnit, 'AGMARK', date, row._recordUuiq]);
+                    `, [toTitleCase(row.state_name), toTitleCase(row.district_name), toTitleCase(row.market_name), row._name, uuiq, finalMin, finalMax, finalModel, finalUnit, 'AGMARK', date, row._recordUuiq]);
                 } else {
                     await client.query(`
                         INSERT INTO market_prices_common (
@@ -113,7 +135,7 @@ async function runNormalization(dateOverride) {
                             commodity_uuiq = EXCLUDED.commodity_uuiq,
                             min_price = EXCLUDED.min_price, max_price = EXCLUDED.max_price, model_price = EXCLUDED.model_price,
                             unit = EXCLUDED.unit, record_uuiq = EXCLUDED.record_uuiq
-                    `, [toTitleCase(row.state_name), toTitleCase(row.apmc_name), row._name, uuiq, row.min_price, row.max_price, row.modal_price, stdUnit, 'eNAM', date, row._recordUuiq]);
+                    `, [toTitleCase(row.state_name), toTitleCase(row.apmc_name), row._name, uuiq, finalMin, finalMax, finalModel, finalUnit, 'eNAM', date, row._recordUuiq]);
 
                     await client.query(`
                         INSERT INTO market_arrivals_common (

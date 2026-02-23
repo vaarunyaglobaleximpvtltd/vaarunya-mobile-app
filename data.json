@@ -4286,6 +4286,804 @@
                 "cmdt_name": "WHITE-GINGELY",
                 "cmdt_group_id": 99,
                 "uuiq": "VAAR717"
+            },
+            {
+                "cmdt_id": 718,
+                "cmdt_name": "BEANS -CLUSTER",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR718"
+            },
+            {
+                "cmdt_id": 719,
+                "cmdt_name": "CHIKOOS",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR719"
+            },
+            {
+                "cmdt_id": 720,
+                "cmdt_name": "GINGER",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR720"
+            },
+            {
+                "cmdt_id": 721,
+                "cmdt_name": "PADDY-BASMATI1121",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR721"
+            },
+            {
+                "cmdt_id": 722,
+                "cmdt_name": "SPINACH (PALAK)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR722"
+            },
+            {
+                "cmdt_id": 723,
+                "cmdt_name": "BER",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR723"
+            },
+            {
+                "cmdt_id": 724,
+                "cmdt_name": "POTATO SWEET",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR724"
+            },
+            {
+                "cmdt_id": 725,
+                "cmdt_name": "BOTTLE GOURDE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR725"
+            },
+            {
+                "cmdt_id": 726,
+                "cmdt_name": "BRINJAL-HYBRID",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR726"
+            },
+            {
+                "cmdt_id": 727,
+                "cmdt_name": "MOUSAMBI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR727"
+            },
+            {
+                "cmdt_id": 728,
+                "cmdt_name": "GREEN GRAM",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR728"
+            },
+            {
+                "cmdt_id": 729,
+                "cmdt_name": "MAIZE YELLOW",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR729"
+            },
+            {
+                "cmdt_id": 730,
+                "cmdt_name": "PADDY",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR730"
+            },
+            {
+                "cmdt_id": 731,
+                "cmdt_name": "SOYA-YELLOW",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR731"
+            },
+            {
+                "cmdt_id": 732,
+                "cmdt_name": "SOYABEANS",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR732"
+            },
+            {
+                "cmdt_id": 733,
+                "cmdt_name": "FRENCH BEAN",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR733"
+            },
+            {
+                "cmdt_id": 734,
+                "cmdt_name": "PEAS-DRY",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR734"
+            },
+            {
+                "cmdt_id": 735,
+                "cmdt_name": "AMLA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR735"
+            },
+            {
+                "cmdt_id": 736,
+                "cmdt_name": "ONION RED",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR736"
+            },
+            {
+                "cmdt_id": 737,
+                "cmdt_name": "COCONUT DEHUSKED IN QUINTAL",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR737"
+            },
+            {
+                "cmdt_id": 738,
+                "cmdt_name": "MAIZE LOCAL",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR738"
+            },
+            {
+                "cmdt_id": 739,
+                "cmdt_name": "RED GRAM-HYBRID",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR739"
+            },
+            {
+                "cmdt_id": 740,
+                "cmdt_name": "RED GRAM-LOCAL",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR740"
+            },
+            {
+                "cmdt_id": 741,
+                "cmdt_name": "PADDY-COMMON GRADE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR741"
+            },
+            {
+                "cmdt_id": 742,
+                "cmdt_name": "PADDY-BASMATI1509",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR742"
+            },
+            {
+                "cmdt_id": 743,
+                "cmdt_name": "BAJRA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR743"
+            },
+            {
+                "cmdt_id": 744,
+                "cmdt_name": "JAGGERY BLACK",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR744"
+            },
+            {
+                "cmdt_id": 745,
+                "cmdt_name": "JAGGERY BROWN",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR745"
+            },
+            {
+                "cmdt_id": 746,
+                "cmdt_name": "JAGGERY GOLD",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR746"
+            },
+            {
+                "cmdt_id": 747,
+                "cmdt_name": "JAGGERY SPECIAL",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR747"
+            },
+            {
+                "cmdt_id": 748,
+                "cmdt_name": "TURMERIC BULB",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR748"
+            },
+            {
+                "cmdt_id": 749,
+                "cmdt_name": "TURMERIC FINGER",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR749"
+            },
+            {
+                "cmdt_id": 750,
+                "cmdt_name": "PADDY-IR.64",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR750"
+            },
+            {
+                "cmdt_id": 751,
+                "cmdt_name": "PADDY-HMT",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR751"
+            },
+            {
+                "cmdt_id": 752,
+                "cmdt_name": "PADDY-JAI SRIRAM",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR752"
+            },
+            {
+                "cmdt_id": 753,
+                "cmdt_name": "PADDY-VISHNUBHOG",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR753"
+            },
+            {
+                "cmdt_id": 754,
+                "cmdt_name": "TAMARIND-FRUIT",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR754"
+            },
+            {
+                "cmdt_id": 755,
+                "cmdt_name": "PADDY-MAHAMAYA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR755"
+            },
+            {
+                "cmdt_id": 756,
+                "cmdt_name": "PADDY-MTU 1010",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR756"
+            },
+            {
+                "cmdt_id": 757,
+                "cmdt_name": "PADDY-DEV BHOG",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR757"
+            },
+            {
+                "cmdt_id": 758,
+                "cmdt_name": "PADDY-SWARNAMASOORI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR758"
+            },
+            {
+                "cmdt_id": 759,
+                "cmdt_name": "GUAR SEEDS",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR759"
+            },
+            {
+                "cmdt_id": 760,
+                "cmdt_name": "JOWAR",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR760"
+            },
+            {
+                "cmdt_id": 761,
+                "cmdt_name": "COTTON-LOOSE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR761"
+            },
+            {
+                "cmdt_id": 762,
+                "cmdt_name": "MAIZE WHITE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR762"
+            },
+            {
+                "cmdt_id": 763,
+                "cmdt_name": "PADDY-PR",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR763"
+            },
+            {
+                "cmdt_id": 764,
+                "cmdt_name": "POINTED GOURD (PARWAL)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR764"
+            },
+            {
+                "cmdt_id": 765,
+                "cmdt_name": "CUMMIN",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR765"
+            },
+            {
+                "cmdt_id": 766,
+                "cmdt_name": "MUSTARD SEED",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR766"
+            },
+            {
+                "cmdt_id": 767,
+                "cmdt_name": "GROUND NUT-PODS",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR767"
+            },
+            {
+                "cmdt_id": 768,
+                "cmdt_name": "SQUASH",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR768"
+            },
+            {
+                "cmdt_id": 769,
+                "cmdt_name": "PADDY-BASMATI ",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR769"
+            },
+            {
+                "cmdt_id": 770,
+                "cmdt_name": "BANANA WHITE CHAKRAKELI ",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR770"
+            },
+            {
+                "cmdt_id": 771,
+                "cmdt_name": "APPLE -RICH RED LARGE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR771"
+            },
+            {
+                "cmdt_id": 772,
+                "cmdt_name": "PADDY-DUPLICATE BASMATI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR772"
+            },
+            {
+                "cmdt_id": 773,
+                "cmdt_name": "BANANA NENDRAN",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR773"
+            },
+            {
+                "cmdt_id": 774,
+                "cmdt_name": "MAIZE-NEW",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR774"
+            },
+            {
+                "cmdt_id": 775,
+                "cmdt_name": "CHANA GULABI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR775"
+            },
+            {
+                "cmdt_id": 776,
+                "cmdt_name": "BAJRA-HYBRID",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR776"
+            },
+            {
+                "cmdt_id": 777,
+                "cmdt_name": "COTTON-RAW",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR777"
+            },
+            {
+                "cmdt_id": 778,
+                "cmdt_name": "TENDER COCONUT (IN NO)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR778"
+            },
+            {
+                "cmdt_id": 779,
+                "cmdt_name": "COTTON-BUNNY/BRAHAMMA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR779"
+            },
+            {
+                "cmdt_id": 780,
+                "cmdt_name": "GROUNDNUT PODS_40 KG(TN)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR780"
+            },
+            {
+                "cmdt_id": 781,
+                "cmdt_name": "PADDY(75 KG)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR781"
+            },
+            {
+                "cmdt_id": 782,
+                "cmdt_name": "ISBGOL (PSYLLIUM HUSK) ",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR782"
+            },
+            {
+                "cmdt_id": 783,
+                "cmdt_name": "BAJRA-LOCAL",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR783"
+            },
+            {
+                "cmdt_id": 784,
+                "cmdt_name": "GROUNDNUT KERNEL_80 KG(TN)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR784"
+            },
+            {
+                "cmdt_id": 785,
+                "cmdt_name": "COCONUT COIR_MATTRESS COIR",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR785"
+            },
+            {
+                "cmdt_id": 786,
+                "cmdt_name": "COCONUT COIR_BRISTLE COIR FIBR",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR786"
+            },
+            {
+                "cmdt_id": 787,
+                "cmdt_name": "COPRA_80 KG(TN)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR787"
+            },
+            {
+                "cmdt_id": 788,
+                "cmdt_name": "KODO MILLET",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR788"
+            },
+            {
+                "cmdt_id": 789,
+                "cmdt_name": "RAGI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR789"
+            },
+            {
+                "cmdt_id": 790,
+                "cmdt_name": "COCONUT COIR_RETTED/WHITE FIBR",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR790"
+            },
+            {
+                "cmdt_id": 791,
+                "cmdt_name": "PADDY -BPT(TN)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR791"
+            },
+            {
+                "cmdt_id": 792,
+                "cmdt_name": "MAIZE-OLD",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR792"
+            },
+            {
+                "cmdt_id": 793,
+                "cmdt_name": "COCONUT WITH HUSK",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR793"
+            },
+            {
+                "cmdt_id": 794,
+                "cmdt_name": "TAMARIND",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR794"
+            },
+            {
+                "cmdt_id": 795,
+                "cmdt_name": "RAGI-LOCAL",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR795"
+            },
+            {
+                "cmdt_id": 796,
+                "cmdt_name": "MILLET",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR796"
+            },
+            {
+                "cmdt_id": 797,
+                "cmdt_name": "BAJRA-YELLOW",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR797"
+            },
+            {
+                "cmdt_id": 798,
+                "cmdt_name": "PADDY-BPT",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR798"
+            },
+            {
+                "cmdt_id": 799,
+                "cmdt_name": "COTTON-LRA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR799"
+            },
+            {
+                "cmdt_id": 800,
+                "cmdt_name": "COTTON-BAGS",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR800"
+            },
+            {
+                "cmdt_id": 801,
+                "cmdt_name": "PADDY-R.N.R",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR801"
+            },
+            {
+                "cmdt_id": 802,
+                "cmdt_name": "TURMERIC CHURA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR802"
+            },
+            {
+                "cmdt_id": 803,
+                "cmdt_name": "MAIZE HYBRID",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR803"
+            },
+            {
+                "cmdt_id": 804,
+                "cmdt_name": "TURMERIC BULB OLD",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR804"
+            },
+            {
+                "cmdt_id": 805,
+                "cmdt_name": "TURMERIC FINGURE OLD",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR805"
+            },
+            {
+                "cmdt_id": 806,
+                "cmdt_name": "JOWAR-YELLOW",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR806"
+            },
+            {
+                "cmdt_id": 807,
+                "cmdt_name": "MAIZE BILT",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR807"
+            },
+            {
+                "cmdt_id": 808,
+                "cmdt_name": "SOYA-LOCAL",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR808"
+            },
+            {
+                "cmdt_id": 809,
+                "cmdt_name": "RED GRAM-GAJRA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR809"
+            },
+            {
+                "cmdt_id": 810,
+                "cmdt_name": "PADDY-SHARBATHI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR810"
+            },
+            {
+                "cmdt_id": 811,
+                "cmdt_name": "PADDY-GRADE 1",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR811"
+            },
+            {
+                "cmdt_id": 812,
+                "cmdt_name": "WHEAT-BHANSI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR812"
+            },
+            {
+                "cmdt_id": 813,
+                "cmdt_name": "PADDY-GRADE A",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR813"
+            },
+            {
+                "cmdt_id": 814,
+                "cmdt_name": "APPLE-RED GOLDEN  MEDUIM",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR814"
+            },
+            {
+                "cmdt_id": 815,
+                "cmdt_name": "BANANA AMRUTHAPANI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR815"
+            },
+            {
+                "cmdt_id": 816,
+                "cmdt_name": "BANANA BHUSHAVALI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR816"
+            },
+            {
+                "cmdt_id": 817,
+                "cmdt_name": "BANANA BONTHA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR817"
+            },
+            {
+                "cmdt_id": 818,
+                "cmdt_name": "BANANA KARPURA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR818"
+            },
+            {
+                "cmdt_id": 819,
+                "cmdt_name": "BANANA RED CHAKRAKELI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR819"
+            },
+            {
+                "cmdt_id": 820,
+                "cmdt_name": "PADDY-SAFARI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR820"
+            },
+            {
+                "cmdt_id": 821,
+                "cmdt_name": "PEAR",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR821"
+            },
+            {
+                "cmdt_id": 822,
+                "cmdt_name": "APPLE -RICH RED MEDIUM",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR822"
+            },
+            {
+                "cmdt_id": 823,
+                "cmdt_name": "NIGER SEED",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR823"
+            },
+            {
+                "cmdt_id": 824,
+                "cmdt_name": "DRY FISH (SHRIMP)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR824"
+            },
+            {
+                "cmdt_id": 825,
+                "cmdt_name": "MANGO RAW",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR825"
+            },
+            {
+                "cmdt_id": 826,
+                "cmdt_name": "APRICOT",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR826"
+            },
+            {
+                "cmdt_id": 827,
+                "cmdt_name": "BANANA OTHERS",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR827"
+            },
+            {
+                "cmdt_id": 828,
+                "cmdt_name": "COCONUT COIR_DECORTICATED FIBR",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR828"
+            },
+            {
+                "cmdt_id": 829,
+                "cmdt_name": "JOWAR-WHITE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR829"
+            },
+            {
+                "cmdt_id": 830,
+                "cmdt_name": "MUSTARD LEAF",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR830"
+            },
+            {
+                "cmdt_id": 831,
+                "cmdt_name": "APPLE-RED ROYAL  LARGE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR831"
+            },
+            {
+                "cmdt_id": 832,
+                "cmdt_name": "PADDY CULTURE ",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR832"
+            },
+            {
+                "cmdt_id": 833,
+                "cmdt_name": "GREEN AMARANTHUS",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR833"
+            },
+            {
+                "cmdt_id": 834,
+                "cmdt_name": "WHEAT-HYBRID",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR834"
+            },
+            {
+                "cmdt_id": 835,
+                "cmdt_name": "TAMARIND BOTU",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR835"
+            },
+            {
+                "cmdt_id": 836,
+                "cmdt_name": "GROUNDNUT LOCAL",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR836"
+            },
+            {
+                "cmdt_id": 837,
+                "cmdt_name": "CUSTARD APPLE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR837"
+            },
+            {
+                "cmdt_id": 838,
+                "cmdt_name": "PONGAM SEEDS",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR838"
+            },
+            {
+                "cmdt_id": 839,
+                "cmdt_name": "BANANA KADALI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR839"
+            },
+            {
+                "cmdt_id": 840,
+                "cmdt_name": "BANANA RED KAPPA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR840"
+            },
+            {
+                "cmdt_id": 841,
+                "cmdt_name": "PADDY-MTU1001",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR841"
+            },
+            {
+                "cmdt_id": 842,
+                "cmdt_name": "PADDY- NLR(TN)",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR842"
+            },
+            {
+                "cmdt_id": 843,
+                "cmdt_name": "MUSTARD WHITE SEEDS",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR843"
+            },
+            {
+                "cmdt_id": 844,
+                "cmdt_name": "SILK COCOON(BH) _DOUBLE HYBR ",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR844"
+            },
+            {
+                "cmdt_id": 845,
+                "cmdt_name": "PADDY-SUPER FINE",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR845"
+            },
+            {
+                "cmdt_id": 846,
+                "cmdt_name": "BANANA POOVAN",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR846"
+            },
+            {
+                "cmdt_id": 847,
+                "cmdt_name": "BANANA RASAKADHALI",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR847"
+            },
+            {
+                "cmdt_id": 848,
+                "cmdt_name": "ARHAR DAL SPLIT",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR848"
+            },
+            {
+                "cmdt_id": 849,
+                "cmdt_name": "POMEGRANATE - BHAGAWA",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR849"
+            },
+            {
+                "cmdt_id": 850,
+                "cmdt_name": "MAIZE-COMMON",
+                "cmdt_group_id": 99,
+                "uuiq": "VAAR850"
             }
         ],
         "note_data": [

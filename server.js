@@ -22,6 +22,12 @@ app.use(express.json());
 // Initialize DB
 initDB();
 
+const { router: authRouter, authMiddleware } = require('./auth');
+app.use('/api/auth', authRouter);
+
+// Protect all following routes with JWT
+app.use('/api', authMiddleware);
+
 // const PRICES_PATH = path.join(__dirname, 'prices.json'); // Removed
 const DATA_PATH = path.join(__dirname, 'data.json');
 
