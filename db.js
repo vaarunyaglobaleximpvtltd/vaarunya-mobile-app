@@ -31,9 +31,12 @@ async function initDB() {
                 email TEXT UNIQUE NOT NULL,
                 name TEXT,
                 picture TEXT,
+                role TEXT DEFAULT 'importer_exporter',
                 created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
             );
         `);
+        // Add role column if it doesn't exist (migration for existing DBs)
+        await client.query('ALTER TABLE users ADD COLUMN IF NOT EXISTS role TEXT DEFAULT \'importer_exporter\'');
 
         // 1. Agmark Sales Data (Raw)
         await client.query(`

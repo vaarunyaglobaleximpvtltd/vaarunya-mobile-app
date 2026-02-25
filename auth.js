@@ -15,7 +15,7 @@ const VALID_CLIENT_IDS = [
 
 // POST /api/auth/google
 router.post('/google', async (req, res) => {
-    const { idToken } = req.body;
+    const { idToken, role } = req.body;
 
     if (!idToken) {
         return res.status(400).json({ error: 'idToken is required' });
@@ -34,6 +34,9 @@ router.post('/google', async (req, res) => {
         const name = payload['name'];
         const picture = payload['picture'];
 
+        // Auto-detect Vaarunya role by email domain
+        const userRole = email.endsWith('@vaarunyaglobalexim.com') ? 'vaarunya' : (role || 'importer_exporter');
+
         const dbClient = await pool.connect();
         try {
             // Check if user exists, otherwise create
@@ -42,27 +45,28 @@ router.post('/google', async (req, res) => {
 
             if (!user) {
                 result = await dbClient.query(
-                    `INSERT INTO users (google_id, email, name, picture)
-                     VALUES ($1, $2, $3, $4) RETURNING *`,
-                    [googleId, email, name, picture]
+                    `INSERT INTO users (google_id, email, name, picture, role)
+                     VALUES ($1, $2, $3, $4, $5) RETURNING *`,
+                    [googleId, email, name, picture, userRole]
                 );
                 user = result.rows[0];
             } else {
-                // Optionally update name/picture if changed
+                // Update name/picture/role if changed
                 await dbClient.query(
-                    `UPDATE users SET name = $1, picture = $2 WHERE google_id = $3`,
-                    [name, picture, googleId]
+                    `UPDATE users SET name = $1, picture = $2, role = $3 WHERE google_id = $4`,
+                    [name, picture, userRole, googleId]
                 );
+                user.role = userRole;
             }
 
             // Generate application JWT
             const token = jwt.sign(
-                { id: user.id, email: user.email, name: user.name, picture: user.picture },
+                { id: user.id, email: user.email, name: user.name, picture: user.picture, role: user.role },
                 JWT_SECRET,
                 { expiresIn: '30d' }
             );
 
-            res.json({ token, user: { id: user.id, email: user.email, name: user.name, picture: user.picture } });
+            res.json({ token, user: { id: user.id, email: user.email, name: user.name, picture: user.picture, role: user.role } });
         } finally {
             dbClient.release();
         }
